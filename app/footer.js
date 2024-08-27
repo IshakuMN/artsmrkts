@@ -430,9 +430,9 @@ const Footer = () => {
             </li>
             <li className="text-[12px] leading-[14.4px] text-customBlackOne">
               ¹At JustMarkets, most of withdrawals are processed instantly
-              (under 1 minute). Once your funds leave our custody, it's up to
-              your chosen payment provider to process the funds and credit your
-              account.
+              (under 1 minute). Once your funds leave our custody, it&apos;s up
+              to your chosen payment provider to process the funds and credit
+              your account.
             </li>
           </ul>
         </div>

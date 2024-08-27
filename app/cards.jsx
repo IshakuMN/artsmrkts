@@ -81,7 +81,7 @@ export const CustomizedService = () => {
       <div className="relative z-10 h-full">
         <h1 className="mb-3 text-xl font-medium">Customized Service</h1>
         <p className="w-48">
-          Our strategies are customised for each client’s flexible and
+          Our strategies are customised for each client&apos;s flexible and
           personalized trading conditions
         </p>
         <Image
