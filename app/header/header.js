@@ -54,15 +54,20 @@ const Header = () => {
       </div>
       <div className="mx-auto flex max-h-[83px] max-w-[1240px] flex-row items-center justify-between py-6">
         <div className="flex flex-row items-center gap-4">
-          <Link href="/" rel="noopener noreferrer">
+          <Link
+            href="/"
+            rel="noopener noreferrer"
+            className="bg-customWhiteOne border-customGreyOne box-shadow-logo flex h-[35px] w-[35px] items-center justify-center rounded-lg border-[0.5px] border-solid"
+          >
             <Image
               src="logo.svg"
               alt="artsmarket company logo"
-              width={30}
-              height={21}
+              width={25}
+              height={17}
               className="max-h-full max-w-full object-contain"
             />
           </Link>
+
           <div className="flex flex-row items-center gap-3 px-4 py-2">
             <div className="flex flex-row items-center">
               <div className="mr-1 px-1">

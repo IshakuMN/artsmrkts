@@ -44,7 +44,7 @@ const Tools = () => {
             />
           ))}
         </ul>
-        <p className="border-l-solid border-l-[3px] border-l-customOrangeSeven py-2.5 pl-6 pr-2.5 text-[20px] font-medium leading-[24px] transition-opacity duration-500 ease-in-out">
+        <p className="border-l-solid --webkit-transition-opacity --webkit-transition-duration-500 border-l-[3px] border-l-customOrangeSeven py-2.5 pl-6 pr-2.5 text-[20px] font-medium leading-[24px] transition-opacity duration-500 ease-in-out">
           {cardText[isClickedCard]}
         </p>
       </div>

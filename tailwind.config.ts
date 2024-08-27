@@ -38,6 +38,8 @@ const config: Config = {
         customOrangeSix: "#F15C27",
         customOrangeSeven: "#F36A36",
         customOrangeEight: "#F36934",
+        customGreyOne: "#F3F5FC",
+        customWhiteOne: "#FDFDFF",
       },
 
       backgroundImage: {

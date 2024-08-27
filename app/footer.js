@@ -9,15 +9,20 @@ const Footer = () => {
     <footer className="bg-custom-gradient-two">
       <div className="mx-auto max-w-[1240px] pb-[91px] pt-[100px]">
         <div className="mb-16 flex flex-row gap-2.5">
-          <Link href="/" rel="noopener noreferrer">
+          <Link
+            href="/"
+            rel="noopener noreferrer"
+            className="bg-customWhiteOne border-customGreyOne box-shadow-logo-footer flex h-[61px] w-[61px] items-center justify-center rounded-lg border-[0.77px] border-solid"
+          >
             <Image
               src="logo.svg"
               alt="logo"
-              width={67}
-              height={46}
+              width={41}
+              height={28}
               className="object-contain"
             />
           </Link>
+
           <p className="w-40 text-[20px] font-semibold leading-[24px] text-customBlackOne">
             The best forex broker
           </p>

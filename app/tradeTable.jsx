@@ -1,39 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import axios from "axios";
-
-const instruments = [
-  {
-    symbol: "C:XAUUSD",
-    name: "XAUUSD",
-    description: "Gold vs US Dollar",
-    img: "/gold.png",
-  },
-  {
-    symbol: "C:EURUSD",
-    name: "EURUSD",
-    description: "Euro vs US Dollar",
-    img: "/euro.png",
-  },
-  {
-    symbol: "AAPL",
-    name: "APPL",
-    description: "Apple Inc.",
-    img: "/apple.png",
-  },
-  {
-    symbol: "BRN",
-    name: "BRENT",
-    description: "Brent Crude Oil",
-    img: "/oil.png",
-  },
-  {
-    symbol: "X:BTCUSD",
-    name: "Bitcoin",
-    description: "Bitcoin vs US Dollar",
-    img: "/bitcoin.png",
-  },
-];
 
 const TradeTable = () => {
   const [prices, setPrices] = useState([]);
@@ -41,32 +7,12 @@ const TradeTable = () => {
   useEffect(() => {
     const fetchPrices = async () => {
       try {
-        const today = new Date();
-        const formattedDate = `${today.getFullYear()}-${String(
-          today.getMonth() + 1,
-        ).padStart(2, "0")}-${String(today.getDate() - 1).padStart(2, "0")}`;
-        console.log("Fetching prices for date:", formattedDate);
-
-        const responses = await Promise.all(
-          instruments.map((instrument) =>
-            axios.get(
-              `https://api.polygon.io/v2/aggs/ticker/${instrument.symbol}/range/1/day/${formattedDate}/${formattedDate}?apiKey=VW0iNVW61DehUZ_0B7TWkudreEmOb_UP`,
-            ),
-          ),
-        );
-        const updatedPrices = responses.map((response, index) => {
-          const data = response.data.results[0];
-          return {
-            name: instruments[index].name,
-            description: instruments[index].description,
-            img: instruments[index].img,
-            bid: data.c,
-            ask: data.c - 0.03,
-            spread: 0.03,
-          };
-        });
-        setPrices(updatedPrices);
-        console.log("Fetched prices: ", updatedPrices);
+        const response = await fetch("/api/forex-data");
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        setPrices(data);
       } catch (error) {
         console.error("Error fetching prices:", error);
       }
@@ -82,7 +28,7 @@ const TradeTable = () => {
           <button className="w-[225px] rounded-full border py-2">
             Register
           </button>
-          <button className="w-[225px] rounded-full bg-customBlueFon py-2 text-white">
+          <button className="w-[225px] rounded-full bg-customBlueFon py-2 text-white hover:bg-[#182654] active:bg-[#001240]">
             Try free demo
           </button>
         </div>
@@ -108,8 +54,12 @@ const TradeTable = () => {
                   </div>
                 </div>
               </td>
-              <td className="p-4">{price.bid.toFixed(2)}</td>
-              <td className="p-4">{price.ask.toFixed(2)}</td>
+              <td className="p-4">
+                {price.bid !== "_" ? price.bid.toFixed(2) : "_"}
+              </td>
+              <td className="p-4">
+                {price.ask !== "_" ? price.ask.toFixed(2) : "_"}
+              </td>
               <td className="rounded-r-[34px] p-4">
                 {price.spread.toFixed(2)}
               </td>

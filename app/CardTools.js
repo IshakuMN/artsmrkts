@@ -31,7 +31,7 @@ const CardTools = ({
         </div>
       ) : (
         <div
-          className={`absolute top-0 z-30 mx-auto pt-8 transition-all duration-500 ease-in-out ${isHovered ? "left-[43%]" : "left-5"}`}
+          className={`--webkit-transition-all --webkit-transition-duration-500 absolute top-0 z-30 mx-auto pt-8 transition-all duration-500 ease-in-out ${isHovered ? "left-[43%]" : "left-5"}`}
         >
           <div
             className={`flex h-[46px] w-[46px] items-center justify-center rounded-[100px] ${isHovered ? "bg-customOrangeEight" : "bg-customBlueFive"}`}
@@ -45,7 +45,7 @@ const CardTools = ({
         alt={title}
         width={isActive ? 812 : isHovered ? 204 : 94}
         height={492}
-        className={`h-full rounded-3xl object-cover transition-all duration-500 ease-in-out`}
+        className={`--webkit-transition-all --webkit-transition-duration-500 h-full rounded-3xl object-cover transition-all duration-500 ease-in-out`}
       />
     </li>
   );

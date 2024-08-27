@@ -33,9 +33,9 @@ const TradeScroll = () => {
     };
 
     fetchRates();
-    const interval = setInterval(fetchRates, 60000); // Update every minute
+    // const interval = setInterval(fetchRates, 60000); // Update every minute
 
-    return () => clearInterval(interval);
+    // return () => clearInterval(interval);
   }, []);
 
   const calculateRate = (base, quote) => {

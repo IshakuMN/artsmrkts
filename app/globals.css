@@ -2,6 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-custom-gradient-bonus {
+  background: linear-gradient(
+    343.36deg,
+    #fe9874 -14.68%,
+    #ffe9cc 38.16%,
+    #ffeed6 47.67%,
+    #ffffff 85.24%
+  );
+}
+
+.bg-custom-gradient-bonus-two {
+  background: radial-gradient(
+    47.68% 50% at 100% 50%,
+    rgba(209, 48, 19, 0.4) 0%,
+    rgba(255, 233, 204, 0.4) 43.84%,
+    rgba(250, 250, 251, 0) 100%
+  );
+}
+
+.box-shadow-logo {
+  box-shadow: -0.94px -0.94px 1.56px 0px #e9eaef inset;
+}
+
+.box-shadow-logo-footer {
+  box-shadow: -1.54px -1.54px 2.57px 0px #e9eaef inset;
+}
+
+#lottie-container {
+  width: 100%;
+  height: 300px;
+  margin: 40px auto;
+}
+
+.lottie-container {
+  width: 200px;
+  height: 600px;
+  max-width: 100%;
+}
+
+/* If you want the container to be responsive */
+@media (max-width: 768px) {
+  .lottie-container {
+    width: 150px;
+    height: 450px;
+  }
+}
+
 .box-shadow {
   box-shadow: 1px 2px 4px 0 #ebebebb5;
 }
@@ -249,11 +296,11 @@
 }
 
 .animate-slide-up {
-  animation: slideUp 5s ease-in-out infinite;
+  animation: slideUp 3s ease-in-out infinite;
 }
 
 .animate-slide-down {
-  animation: slideDown 5s ease-in-out infinite;
+  animation: slideDown 3s ease-in-out infinite;
 }
 
 .animate-slide-upMore-one {

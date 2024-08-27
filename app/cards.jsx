@@ -8,8 +8,8 @@ const Cards = () => {
         <h1 className="my-8 text-[44px] font-medium">
           Trade in Forex. profit in Forex
         </h1>
-        <button className="h-fit rounded-full bg-customBlueFon px-6 py-2 text-white">
-          Open live account
+        <button className="h-fit rounded-full bg-customBlueFon px-6 py-2 font-semibold text-white hover:bg-[#182654] active:bg-[#001240]">
+          Register
         </button>
       </div>
       <div className="my-2 flex justify-between">
