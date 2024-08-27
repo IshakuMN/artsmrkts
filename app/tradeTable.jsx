@@ -25,10 +25,10 @@ const TradeTable = () => {
       <div className="mb-10 flex items-center justify-between">
         <h1 className="text-[44px] font-medium">Stable and reliable pricing</h1>
         <div className="flex space-x-2">
-          <button className="w-[225px] rounded-full border py-2">
+          <button className="w-[225px] rounded-full border py-2 font-semibold hover:bg-[#F6F6F6] active:bg-[#E8E8E9]">
             Register
           </button>
-          <button className="w-[225px] rounded-full bg-customBlueFon py-2 text-white hover:bg-[#182654] active:bg-[#001240]">
+          <button className="w-[225px] rounded-full bg-customBlueFon py-2 font-semibold text-white hover:bg-[#182654] active:bg-[#001240]">
             Try free demo
           </button>
         </div>
