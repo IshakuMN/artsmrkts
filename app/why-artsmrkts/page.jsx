@@ -50,7 +50,7 @@ export default function Page() {
                             className="relative object-contain -bottom-6"
                         />
                     </div>
-                    <div className="max-w-[295px] w-full flex flex-col rounded-3xl bg-customGreyFour relative overflow-hidden h-[380px]">
+                    <div className="max-w-[295px] w-full flex flex-col rounded-3xl relative overflow-hidden h-[380px]">
                         <div className="bg-custom-gradient-five absolute z-10 h-full w-full"></div>
                         <div className="flex flex-col gap-6 pt-14 pl-7  relative z-20">
                             <h3 className="text-[32px] font-medium leading-[38.1px] text-customBlackFive">
