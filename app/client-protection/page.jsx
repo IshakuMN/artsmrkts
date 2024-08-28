@@ -61,8 +61,8 @@ const Reliability = () => {
               alt="briefcase"
             />
             <p>
-              The successful work of Artsmarkets&apos;' risk-management team
-              ensures the company&apos;'s stability in any market situation. Our
+              The successful work of Artsmarkets&apos;s risk-management team
+              ensures the company&apos;s stability in any market situation. Our
               commitment to reliable operations and tailored service helps us
               effectively navigate market volatility and provide consistent
               support to our clients.
@@ -106,7 +106,7 @@ const Reliability = () => {
           </h3>
           <p className="flex-grow">
             Liquidity for Artsmarkets company is provided by 18 biggest world
-            banks. Moreover the clients of the company get only the best prices
+            banks. Moreover, the clients of the company get only the best prices
             from the price float which is offered by these banks for the most
             beneficial orders.
           </p>
@@ -153,7 +153,7 @@ const SafetyMethods = () => {
     {
       heading: "Protection from negative balance",
       description:
-        "JustMarkets company makes compensations of the clients&apos; losses that exceed the amount of funds on their trading accounts. This means that when negative balance takes place because of a sharp movement on the market, it will be set to zero in order to protect the clients from the unexpected losses.",
+        "JustMarkets company makes compensations of the client's; losses that exceed the amount of funds on their trading accounts. This means that when negative balance takes place because of a sharp movement on the market, it will be set to zero in order to protect the clients from the unexpected losses.",
     },
     {
       heading: "International security",
@@ -163,7 +163,7 @@ const SafetyMethods = () => {
     {
       heading: "Data storage protection",
       description:
-        "Data of users is protected not only while transferring between the company&apos;s website and the browser, we also provide an encryption of all stored information that helps to prevent unauthorized access to the data of our clients.",
+        "Data of users is protected not only while transferring between the company's website and the browser, we also provide an encryption of all stored information that helps to prevent unauthorized access to the data of our clients.",
     },
     {
       heading: "Multilevel system of servers",
