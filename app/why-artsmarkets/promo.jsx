@@ -1,5 +1,5 @@
 "use client";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,6 +14,15 @@ const Promo = () => {
     const closeModal = () => {
         setIsModalOpen(false);
     };
+
+
+    const handleOverlayClick = (event) => {
+        if (event.target === event.currentTarget) {
+            closeModal();
+        }
+    };
+
+
     return (
         <>
             <section
@@ -81,7 +90,8 @@ const Promo = () => {
             </section>
 
             {isModalOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-20 flex items-center justify-center z-50 transition-opacity duration-300 opacity-0 animate-fade-in">
+                <div className="fixed inset-0 bg-black bg-opacity-20 flex items-center justify-center z-50 transition-opacity duration-300 opacity-0 animate-fade-in"  onClick={handleOverlayClick}
+                >
                     <div className="relative max-w-[90%] max-h-[90%]  transform scale-95 transition-transform duration-300 animate-scale-in">
                         <button
                             type="button"
