@@ -153,22 +153,22 @@ const SafetyMethods = () => {
     {
       heading: "Protection from negative balance",
       description:
-        "JustMarkets company makes compensations of the clients’ losses that exceed the amount of funds on their trading accounts. This means that when negative balance takes place because of a sharp movement on the market, it will be set to zero in order to protect the clients from the unexpected losses.",
+        "JustMarkets company makes compensations of the clients&apos; losses that exceed the amount of funds on their trading accounts. This means that when negative balance takes place because of a sharp movement on the market, it will be set to zero in order to protect the clients from the unexpected losses.",
     },
     {
       heading: "International security",
       description:
-        "Internal procedures of the company are based on the PCI DSS security standard, which involves a complex approach to information security of the clients’ data.",
+        "Internal procedures of the company are based on the PCI DSS security standard, which involves a complex approach to information security of the clients&apos; data.",
     },
     {
       heading: "Data storage protection",
       description:
-        "Data of users is protected not only while transferring between the company’s website and the browser, we also provide an encryption of all stored information that helps to prevent unauthorized access to the data of our clients.",
+        "Data of users is protected not only while transferring between the company&apos;s website and the browser, we also provide an encryption of all stored information that helps to prevent unauthorized access to the data of our clients.",
     },
     {
       heading: "Multilevel system of servers",
       description:
-        "Infrastructure, which consists of multiple servers, supports uninterrupted work of the system. And a complex scheme of data backup helps to prevent loss of the clients’ information (personal data, history of commercial transactions, etc.) in any situation.",
+        "Infrastructure, which consists of multiple servers, supports uninterrupted work of the system. And a complex scheme of data backup helps to prevent loss of the clients&apos; information (personal data, history of commercial transactions, etc.) in any situation.",
     },
   ];
 
