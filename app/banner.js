@@ -108,7 +108,13 @@ const Banner = () => {
               className="object-contain"
             />
           </div>
-          <div className="animate-slide-down z-50 my-auto flex flex-col items-center gap-2 pt-20">
+          <div className="animate-slide-down relative z-50 my-auto flex flex-col items-center gap-2 pt-20">
+            <Image
+              src="/redMask.svg"
+              width={700}
+              height={2500}
+              className="absolute bottom-0 left-0"
+            />{" "}
             <LottiePlayerHtmlRed />
           </div>
           <div className="animate-slide-up my-auto flex flex-col items-center gap-2">
@@ -139,7 +145,13 @@ const Banner = () => {
               className="object-contain"
             />
           </div>
-          <div className="animate-slide-down z-50 my-auto flex flex-col items-center gap-2 pb-16">
+          <div className="animate-slide-down relative z-50 my-auto flex flex-col items-center gap-2 pb-16">
+            <Image
+              src="/greenMask.svg"
+              width={700}
+              height={2500}
+              className="absolute bottom-0 left-0"
+            />
             <LottiePlayerHtml />
           </div>
         </div>

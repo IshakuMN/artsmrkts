@@ -40,7 +40,7 @@ const MenuItem = ({ label, isActive, handleClick, links = [] }) => {
       <AnimatePresence>
         {isActive && (
           <motion.div
-            className="box-shadow absolute left-0 top-[43px] z-30 flex w-full flex-col rounded-lg bg-white"
+            className="box-shadow absolute left-0 top-[43px] z-30 flex w-[200px] flex-col rounded-lg bg-white"
             initial={{ opacity: 0, height: 0 }} // Начальное состояние
             animate={{ opacity: 1, height: "auto" }} // Анимация при появлении
             exit={{ opacity: 0, height: 0 }} // Анимация при исчезновении

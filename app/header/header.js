@@ -57,7 +57,7 @@ const Header = () => {
           <Link
             href="/"
             rel="noopener noreferrer"
-            className="bg-customWhiteOne border-customGreyOne box-shadow-logo flex h-[35px] w-[35px] items-center justify-center rounded-lg border-[0.5px] border-solid"
+            className="box-shadow-logo flex h-[35px] w-[35px] items-center justify-center rounded-lg border-[0.5px] border-solid border-customGreyOne bg-customWhiteOne"
           >
             <Image
               src="logo.svg"
@@ -157,12 +157,16 @@ const Header = () => {
               isActive={activeMenuItem === "Company"}
               handleClick={() => handleClickMenuItem("Company")}
               links={[
-                { href: "/", text: "About Us" },
-                { href: "/", text: "Sponsorship" },
-                { href: "/", text: "News Room" },
-                { href: "/", text: "Contact Us" },
-                { href: "/", text: "License" },
-                { href: "/", text: "FAQ" },
+                { href: "/why-artsmarkets", text: "Why Artsmarkets" },
+                { href: "/regulations", text: "Regulations" },
+                { href: "/client-protection", text: "Client Fund Protection" },
+                { href: "/legal-documents", text: "legal documents" },
+                { href: "/contact-us", text: "Contact us" },
+                { href: "/career", text: "Career in Artsmrkts" },
+                { href: "/help-center", text: "Help center" },
+                { href: "/welcome-bonus", text: "Welcome bonus" },
+                { href: "/re-deposit-bonus", text: "Re-deposit bonus" },
+                { href: "/refer-bonus", text: "Refer bonus" },
               ]}
             />
             <MenuItem

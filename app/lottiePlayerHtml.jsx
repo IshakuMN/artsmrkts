@@ -14,7 +14,7 @@ const LottiePlayerHtml = () => {
       if (containerRef.current) {
         containerRef.current.innerHTML = `
           <dotlottie-player 
-            src="https://lottie.host/0543d519-2bea-49d5-8621-7a7f34e94be5/LLwZHGIxg1.json" 
+            src="https://lottie.host/6c5c0c46-f7aa-417a-bf78-8b184e474f1a/w4zYDpwm3t.json" 
             background="transparent" 
             speed="1" 
             style="width: 116px; height: 300px;  transform: scale(1.2);" 
