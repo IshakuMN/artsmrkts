@@ -6,7 +6,7 @@ import { useEffect, useState, useCallback } from "react";
 const page = () => {
   return (
     <section className="">
-      <h1 className="mb-4 mt-10 pl-[80px] text-5xl font-medium">
+      <h1 className="mb-4 mt-10 pl-[80px] text-[54px] font-semibold">
         Client fund protection
       </h1>
       <div className="relative flex flex-col rounded-t-[80px] bg-customGreyFour px-[100px] py-[80px]">
@@ -47,10 +47,12 @@ export default page;
 const Reliability = () => {
   return (
     <div>
-      <h2 className="text-3xl">Reliability with Artsmarkets</h2>
+      <h2 className="mb-8 mt-28 text-[44px] font-medium">
+        Reliability with Artsmarkets
+      </h2>
       <div className="flex flex-row space-x-3">
         <div className="flex flex-1 flex-col space-y-3">
-          <div className="rounded-lg bg-white p-[32px]">
+          <div className="rounded-[16px] bg-white p-[32px]">
             <h3 className="text-xl font-semibold">Customized Service</h3>
             <Image
               src="/briefcase.svg"
@@ -59,15 +61,15 @@ const Reliability = () => {
               alt="briefcase"
             />
             <p>
-              The successful work of Artsmarkets' risk-management team ensures
-              the company's stability in any market situation. Our commitment to
-              reliable operations and tailored service helps us effectively
-              navigate market volatility and provide consistent support to our
-              clients.
+              The successful work of Artsmarkets&apos;' risk-management team
+              ensures the company&apos;'s stability in any market situation. Our
+              commitment to reliable operations and tailored service helps us
+              effectively navigate market volatility and provide consistent
+              support to our clients.
             </p>
           </div>
           <div className="flex space-x-3">
-            <div className="rounded-lg bg-white p-[32px]">
+            <div className="rounded-[16px] bg-white p-[32px]">
               <h3 className="text-xl font-semibold">Segregated accounts</h3>
               <Image
                 src="/creditCards.svg"
@@ -81,7 +83,7 @@ const Reliability = () => {
                 of the clients are separated.
               </p>
             </div>
-            <div className="rounded-lg bg-white p-[32px]">
+            <div className="rounded-[16px] bg-white p-[32px]">
               <h3 className="text-xl font-semibold">Qualified staff</h3>
               <Image
                 src="/staffs.svg"
@@ -97,7 +99,7 @@ const Reliability = () => {
             </div>
           </div>
         </div>
-        <div className="flex max-w-[305px] flex-1 flex-col rounded-lg bg-white p-[32px] pt-20">
+        <div className="flex max-w-[305px] flex-1 flex-col rounded-[16px] bg-white p-[32px] pt-20">
           <Image src="/pillars.svg" width={90} height={76} alt="credit Cards" />
           <h3 className="my-2 text-xl font-semibold">
             Liquidity of biggest banks
