@@ -40,6 +40,12 @@ const config: Config = {
         customOrangeEight: "#F36934",
         customGreyOne: "#F3F5FC",
         customWhiteOne: "#FDFDFF",
+        customGreyTen: "#F4F4F4",
+        customGreyEleven: "#524D49",
+        customGreyTwelve: "#E0E0E0",
+        customGreyThirteen: "#EBEBEB",
+        customGreyFourteen: "#1B1F3B",
+        customBlueSix: "#2F4DAE",
       },
 
       backgroundImage: {
