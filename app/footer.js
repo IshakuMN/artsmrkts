@@ -86,7 +86,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="flex flex-row gap-4">
-                <div className="flex flex-col">
+                <div className="flex flex-col w-[111px]">
                   <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
                     Markets & Tools
                   </p>
@@ -143,8 +143,8 @@ const Footer = () => {
             </div>
             <div className="flex flex-1 flex-col justify-between gap-8">
               <div className="flex flex-row gap-4">
-                <div className="flex flex-col">
-                  <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
+                <div className="flex flex-col w-[111px]">
+                  <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour w-[111px]">
                     Trading
                   </p>
                   <div className="h-[1px] w-full bg-customBlueFour"></div>
@@ -207,7 +207,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="flex flex-row gap-4">
-                <div className="flex flex-col">
+                <div className="flex flex-col w-[111px]">
                   <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
                     Markets
                   </p>
@@ -255,8 +255,8 @@ const Footer = () => {
             </div>
             <div className="flex flex-1 flex-col justify-between">
               <div className="flex flex-row gap-4">
-                <div className="flex flex-col">
-                  <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
+                <div className="flex flex-col w-[111px]">
+                  <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour  w-[111px]">
                     Platform
                   </p>
                   <div className="h-[1px] w-full bg-customBlueFour"></div>
@@ -381,8 +381,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="mb-[101px] flex flex-row gap-9">
-          <div className="flex w-[88px] flex-col">
-            <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
+          <div className="flex w-[111px] flex-col">
+            <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour w-[111px]">
               Legal{" "}
             </p>
             <div className="h-[1px] w-full bg-customBlueFour"></div>
