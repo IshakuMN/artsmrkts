@@ -14,37 +14,6 @@ export default function Page() {
     const [phoneError, setPhoneError] = useState('');
     const [messageError, setMessageError] = useState('');
 
-    const checkNameAvailability = async (name) => {
-        try {
-            const lowerCaseName = name.toLowerCase();
-            const response = await fetch(`/api/check-name?name=${encodeURIComponent(lowerCaseName)}`);
-            const result = await response.json();
-
-            if (result.exists) {
-                setNameError('This name is already in use');
-            } else {
-                setNameError('');
-            }
-        } catch (error) {
-            setNameError('Error checking name availability');
-        }
-    };
-
-    const checkEmailAvailability = async (email) => {
-        try {
-            const response = await fetch(`/api/check-email?email=${encodeURIComponent(email)}`);
-            const result = await response.json();
-
-            if (result.exists) {
-                setEmailError('This email is already in use');
-            } else {
-                setEmailError('');
-            }
-        } catch (error) {
-            setEmailError('Error checking email availability');
-        }
-    };
-
     const validateName = (name) => {
         const namePattern = /^[A-Za-z\s\-']+$/;
         if (name.length < 1) {
@@ -52,7 +21,7 @@ export default function Page() {
         } else if (name.length < 2) {
             setNameError('Name must be at least 2 characters long');
         } else if (name.length > 50) {
-            setNameError('Name must be less than 50 characters long');
+            setNameError('The name must contain no more than 50 characters.');
         } else if (!namePattern.test(name)) {
             setNameError('Name can only contain letters, spaces, dashes, and apostrophes');
         } else {
@@ -61,11 +30,11 @@ export default function Page() {
     };
 
     const validateEmail = (email) => {
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailPattern =  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!email) {
             setEmailError('Email is required');
         } else if (email.length < 4) {
-            setEmailError('Email is too long. Minimum length is 4 characters');
+            setEmailError('Email is too short. Minimum length is 4 characters');
         } else if (email.length > 50) {
             setEmailError('Email is too long. Maximum length is 50 characters');
         } else if (!emailPattern.test(email)) {
