@@ -157,7 +157,7 @@ const Header = () => {
               isActive={activeMenuItem === "Company"}
               handleClick={() => handleClickMenuItem("Company")}
               links={[
-                { href: "/why-artsmarkets", text: "Why Artsmarkets" },
+                { href: "/why-artsmrkts", text: "Why Artsmarkets" },
                 { href: "/regulations", text: "Regulations" },
                 { href: "/client-protection", text: "Client Fund Protection" },
                 { href: "/legal-documents", text: "legal documents" },
