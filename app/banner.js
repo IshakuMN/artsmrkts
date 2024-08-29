@@ -7,18 +7,6 @@ import dynamic from "next/dynamic";
 import LottiePlayerHtml from "./lottiePlayerHtml";
 import LottiePlayerHtmlRed from "./lottiePlayerHtmlRed";
 
-// const LottiePlayerGreen = dynamic(() => import("./lottiePlayerHtml"), {
-//   ssr: false,
-// });
-
-// const LottiePlayerRed = dynamic(() => import("./lottiePlayerHtmlRed"), {
-//   ssr: false,
-// });
-
-// const LottiePlayerGreen = dynamic(() => import("./LottiePlayerGreen"), {
-//   ssr: false,
-// });
-
 const inter = Inter({ subsets: ["latin"] });
 const zen_kaku_gothic_new = Zen_Kaku_Gothic_New({
   subsets: ["latin"],
@@ -30,10 +18,6 @@ const Banner = () => {
   const [isBuyFigureOrange, setIsBuyFigureOrange] = useState(false);
   const [isSellFigureGreen, setIsSellFigureGreen] = useState(false);
   const ref = useRef(null);
-
-  // useEffect(() => {
-  //   import("@dotlottie/player-component");
-  // }, []);
 
   useEffect(() => {
     // Проверяем, если currentPosition равен 1 или 3

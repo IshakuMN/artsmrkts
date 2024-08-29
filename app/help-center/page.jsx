@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import PopularArticles from "./popularArticles";
 
 import {
   Accordion,
@@ -26,6 +27,7 @@ const Page = () => {
     <div>
       <Hero selectedFAQ={selectedFAQ} onFAQClick={handleFAQClick} />
       <FAQ ref={faqRef} selectedFAQ={selectedFAQ} />
+      <PopularArticles />
     </div>
   );
 };
