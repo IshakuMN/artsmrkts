@@ -1,9 +1,13 @@
-import PopularArticles from "./popularArticles";
+import ContactUs from "../contactUs";
+import FeaturedArticles from "./featuredArticles";
+import MoreCategories from "../moreCategories";
 
 export default function Page() {
     return (
         <main className="relative">
-            <PopularArticles />
+            <MoreCategories />
+            <FeaturedArticles />
+            <ContactUs />
         </main>
     );
 }
