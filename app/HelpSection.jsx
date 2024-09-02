@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const HelpSection = () => {
+    const [articleHelpFull, setArticleHelpFull] = useState(null);
     const content = {
         "Any successful withdrawals cancel the bonus amount": {
             title: "Any successful withdrawals cancel the bonus amount",
@@ -51,9 +52,13 @@ const HelpSection = () => {
     };
 
     const firstKey = Object.keys(content)[0];
-    debugger
     const [activeItem, setActiveItem] = useState(firstKey);
 
+
+    const handleSumbit = (data) => {
+        console.log(data);
+        setArticleHelpFull(data);
+    }
     return (
         <section className="relative">
             <div className="max-w-7xl mx-auto py-16 flex flex-col gap-14">
@@ -92,21 +97,24 @@ const HelpSection = () => {
                                 </>
                             ) : null}
                         </div>
-                        <div className="flex flex-col py-11 pl-11 pr-20 bg-customBlueSeven rounded-2xl gap-6">
+                        {articleHelpFull? <div className="max-w-[529px] bg-customGreenTwo rounded-2xl px-11  gap-8 py-8 flex flex-row items-center">
+                            <div
+                                className="flex h-[60px] w-[60px] cursor-pointer items-center justify-center rounded-[100px] bg-customGreenOne">
+                                <Image src="arrow7.svg" alt="call" width={18} height={15}
+                                       className="object-contain "/>
+                            </div>
+                            <p className="text-[20px] leading-[24px] text-customBlackOne">Thank you for your feedback!</p>
+                        </div> : <div className="flex flex-col py-11 pl-11 pr-20 bg-customBlueSeven rounded-2xl gap-6">
                             <p className="text-[20px] leading-[24px] text-customBlackOne">Was this article helpful?</p>
-                            <div className="flex flex-row gap-6">
-                                <Link href="/">
-                                    <button type="button" className="w-48 flex cursor-pointer items-center justify-center rounded-[44px] border-[1px] border-customGrey px-4 py-2 hover:bg-customGreyTwo active:bg-customGrey">
+                            <div className="flex flex-row gap-6 max-w-[529px]">
+                                    <button type="button" onClick={() => handleSumbit([content[activeItem].title,"no"])} className="w-48 flex cursor-pointer items-center justify-center rounded-[44px] border-[1px] border-customGrey px-4 py-2 hover:bg-customGreyTwo active:bg-customGrey">
                                         <span className="text-[14px] leading-[16.8px] text-customBlue font-semibold">No</span>
                                     </button>
-                                </Link>
-                                <Link href="/">
-                                    <button type="button" className="w-48 flex cursor-pointer flex-row items-center justify-center rounded-[44px] bg-customBlueFon px-4 py-2 hover:bg-customBlue active:bg-customBlueTwo">
+                                    <button type="button" onClick={() => handleSumbit([content[activeItem].title,"yes"])} className="w-48 flex cursor-pointer flex-row items-center justify-center rounded-[44px] bg-customBlueFon px-4 py-2 hover:bg-customBlue active:bg-customBlueTwo">
                                         <span className="text-[14px] leading-[16.8px] text-white font-semibold">Yes</span>
                                     </button>
-                                </Link>
                             </div>
-                        </div>
+                        </div>}
                     </div>
                 </div>
             </div>

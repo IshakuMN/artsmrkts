@@ -219,7 +219,7 @@ const Header = () => {
             onMouseLeave={() => setIsHoveredSearch(false)}
             onClick={() => setIsSearchFind(!isSearchFind)}
           >
-            <Image
+<Image
               src={isHoveredSearch ? "searchOrange.svg" : "search.svg"}
               alt="search"
               width={14}

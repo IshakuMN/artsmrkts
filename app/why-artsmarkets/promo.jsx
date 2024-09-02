@@ -26,7 +26,7 @@ const Promo = () => {
     return (
         <>
             <section
-                className="rounded-t-[80px]  py-16 relative bg-custom-gradient-why border-b-[1px] border-customGrey border-solid">
+                className="rounded-t-[80px]  py-16 relative bg-custom-gradient-why border-b-[1px] border-customGrey border-solid ">
                 <div className="max-w-[1280px] mx-auto flex flex-row gap-5 pb-16">
                     <div className="flex flex-col p-8 gap-4">
                         <div className="flex flex-row gap-2 items-center">
