@@ -233,7 +233,7 @@ const Header = () => {
           <Link href="/login">
             <button
               type="button"
-              className="flex w-[88px] cursor-pointer flex-row items-center justify-center rounded-[44px] bg-customBlueFon px-4 py-2 hover:bg-customBlue active:bg-customBlueTwo"
+              className="fl ex w-[88px] cursor-pointer flex-row items-center justify-center rounded-[44px] bg-customBlueFon px-4 py-2 hover:bg-customBlue active:bg-customBlueTwo"
             >
               <span className="text-[14px] leading-[16.8px] text-white">
                 Login

@@ -3,6 +3,8 @@ import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./header/header";
 import Footer from "@/app/footer";
+import Dialogue from "@/app/dialogue";
+import React from "react";
 
 const work_sans = Work_Sans({
   subsets: ["latin"],
@@ -20,6 +22,7 @@ export default function RootLayout({ children }) {
       <body className={work_sans.className}>
         <Header />
         {children}
+        <Dialogue />
         <Footer />
       </body>
     </html>

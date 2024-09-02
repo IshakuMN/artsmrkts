@@ -23,10 +23,12 @@
 
 .box-shadow-logo {
   box-shadow: -0.94px -0.94px 1.56px 0px #e9eaef inset;
+  border-radius: 8px;
 }
 
 .box-shadow-logo-footer {
   box-shadow: -1.54px -1.54px 2.57px 0px #e9eaef inset;
+  border-radius: 8px;
 }
 
 #lottie-container {

@@ -60,7 +60,7 @@ const config = {
         customGreyThirteen: "#EBEBEB",
         customGreyFourteen: "#1B1F3B",
         customBlueSix: "#2F4DAE",
-
+        customBlueSeven: "#F5F8FF",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

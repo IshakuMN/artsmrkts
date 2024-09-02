@@ -77,8 +77,8 @@ const TradeTable = () => {
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-medium">Stable and reliable pricing</h1>
         <div className="flex space-x-2">
-          <button className="rounded-full border px-16 py-1">Register</button>
-          <button className="rounded-full bg-blue-900 px-16 py-1 text-white">
+          <button className="rounded-full border px-16 py-1 font-semibold">Register</button>
+          <button className="rounded-full bg-blue-900 px-16 py-1 text-white font-semibold">
             Try free demo
           </button>
         </div>
