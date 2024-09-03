@@ -31,7 +31,7 @@ const Page = () => {
       <Hero selectedFAQ={selectedFAQ} onFAQClick={handleFAQClick} />
       <FAQ ref={faqRef} selectedFAQ={selectedFAQ} />
       <MoreCategories />
-      {/* <PopularArticles /> */}
+
       <FeaturedArticles />
       <ContactUs />
     </div>
