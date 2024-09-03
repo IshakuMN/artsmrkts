@@ -61,7 +61,7 @@ const Header = () => {
           >
             <Image
               src="logo.svg"
-              alt="artsmarket company logo"
+              alt="artsmkts company logo"
               width={25}
               height={17}
               className="max-h-full max-w-full object-contain"
@@ -157,12 +157,12 @@ const Header = () => {
               isActive={activeMenuItem === "Company"}
               handleClick={() => handleClickMenuItem("Company")}
               links={[
-                { href: "/why-artsmarkets", text: "Why Artsmarkets" },
+                { href: "/why-artsmrkts", text: "Why Artsmrkts" },
                 { href: "/regulations", text: "Regulations" },
                 { href: "/client-protection", text: "Client Fund Protection" },
                 { href: "/legal-documents", text: "legal documents" },
                 { href: "/contact-us", text: "Contact us" },
-                { href: "/career", text: "Career in Artsmrkts" },
+                { href: "/career-in-artsmrkts", text: "Career in Artsmrkts" },
                 { href: "/help-center", text: "Help center" },
                 { href: "/welcome-bonus", text: "Welcome bonus" },
                 { href: "/re-deposit-bonus", text: "Re-deposit bonus" },

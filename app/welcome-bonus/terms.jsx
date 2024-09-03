@@ -10,7 +10,7 @@ const Terms = () => {
         "The 20% Re-Deposit Bonus is added to your account automatically after the deposit."
     ];
     const leftBlockText = [
-        "The invited client should create a live account at Artsmarkets and deposit a minimum of $100",
+        "The invited client should create a live account at Artsmrkts and deposit a minimum of $100",
         "One account can hold no more than $3000 of bonus funds at a time"
     ];
 

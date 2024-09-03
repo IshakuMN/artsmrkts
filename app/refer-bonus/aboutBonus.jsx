@@ -16,7 +16,7 @@ const AboutBonus = () => {
                     <div className="border-b-[1px] border-customGrey border-solid h-52"><Image src="/chain.svg" alt="chain" width={209} height={209} className="object-contain mx-auto"/></div>
                     <div className="flex flex-col pl-11 h-48">
                         <p className="text-[54px] font-semibold leading-[64.8px] text-customOrange">2</p>
-                        <p className="text-[20px] leading-[24px] text-customBlackOne">Make sure they start trading with Artsmarkets</p>
+                        <p className="text-[20px] leading-[24px] text-customBlackOne">Make sure they start trading with Artsmrkts</p>
                     </div>
                 </div>
             </div>

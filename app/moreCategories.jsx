@@ -76,7 +76,7 @@ const MoreCategories = () => {
                 <Link href="/categories-and-articles">
                     <div
                         className="pr-10 pl-6 pt-6 h-32 border-[1px] border-solid border-customGrey bg-customGreyFour max-w-56 relative rounded-2xl">
-                        <p className="text-[20px] leading-[24px] text-black">About Artsmarkets</p>
+                        <p className="text-[20px] leading-[24px] text-black">About Artsmrkts</p>
                         <Image src="/logo.svg" alt="logo" height={55} width={80}
                                className="object-contain absolute bottom-0 right-2.5"/>
                     </div>

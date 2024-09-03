@@ -15,7 +15,7 @@ const page = () => {
         <div className="flex">
           <div className="space-y-4 pt-32">
             <p className="max-w-[418px]">
-              By working with Artsmarkets, clients can be confident in the
+              By working with Artsmrkts, clients can be confident in the
               safety of their financial assets and personal information.
             </p>
             <Image src="/longArrowSafety.svg" width={604} height={0} />
@@ -48,7 +48,7 @@ const Reliability = () => {
   return (
     <div>
       <h2 className="mb-8 mt-28 text-[44px] font-medium">
-        Reliability with Artsmarkets
+        Reliability with Artsmrkts
       </h2>
       <div className="flex flex-row space-x-3">
         <div className="flex flex-1 flex-col space-y-3">
@@ -61,7 +61,7 @@ const Reliability = () => {
               alt="briefcase"
             />
             <p>
-              The successful work of Artsmarkets&apos;s risk-management team
+              The successful work of Artsmrkts&apos;s risk-management team
               ensures the company&apos;s stability in any market situation. Our
               commitment to reliable operations and tailored service helps us
               effectively navigate market volatility and provide consistent
@@ -78,8 +78,8 @@ const Reliability = () => {
                 alt="credit Cards"
               />
               <p>
-                The funds of Artsmarkets clients are situated on the segregated
-                bank accounts, which means that Artsmarkets own funds and funds
+                The funds of Artsmrkts clients are situated on the segregated
+                bank accounts, which means that Artsmrkts own funds and funds
                 of the clients are separated.
               </p>
             </div>
@@ -92,7 +92,7 @@ const Reliability = () => {
                 alt="credit Cards"
               />
               <p>
-                Artsmarkets staff members are high-level professionals with more
+                Artsmrkts staff members are high-level professionals with more
                 than 10 years of experience in the financial area who are always
                 ready to help and to provide qualified support to the clients.
               </p>
@@ -105,7 +105,7 @@ const Reliability = () => {
             Liquidity of biggest banks
           </h3>
           <p className="flex-grow">
-            Liquidity for Artsmarkets company is provided by 18 biggest world
+            Liquidity for Artsmrkts company is provided by 18 biggest world
             banks. Moreover, the clients of the company get only the best prices
             from the price float which is offered by these banks for the most
             beneficial orders.
@@ -132,7 +132,7 @@ const Guarantee = () => {
         <p className="max-w-[877px] text-[32px] font-medium leading-10">
           Guaranteeing the security of financial resources and the
           confidentiality of personal information is our key commitment to
-          everyone who chooses Artsmarkets
+          everyone who chooses Artsmrkts
         </p>
         <button className="flex items-center gap-x-4 rounded-full bg-customOrangeTwo px-10 py-3 text-lg font-semibold text-white hover:bg-customOrange active:bg-customOrangeThree">
           Open an account
@@ -210,7 +210,7 @@ const SafetyMethods = () => {
     <div className="flex items-center justify-between p-4">
       <div className="">
         <h2 className="mb-20 max-w-[535px] text-[44px] font-medium leading-[50px]">
-          How does Artsmarkets ensure your safety?
+          How does Artsmrkts ensure your safety?
         </h2>
         <Image
           src="/phoneSafety.svg"

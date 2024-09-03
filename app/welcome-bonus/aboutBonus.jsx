@@ -9,7 +9,7 @@ const AboutBonus = () => {
                 <div className="flex flex-col flex-1">
                     <div className="h-40  border-b-[1px] border-customGrey border-solid">
                         <h2 className="text-[32px] font-medium leading-[38.4px] text-customBlueThree max-w-[407px] ml-auto">Start
-                            investing with Artsmarkets today!</h2>
+                            investing with Artsmrkts today!</h2>
                     </div>
                     <div className="flex flex-col pr-8 pt-6 border-solid max-w-[407px] ml-auto">
                         <p className="text-[54px] font-semibold leading-[64.8px] text-customOrange">1</p>

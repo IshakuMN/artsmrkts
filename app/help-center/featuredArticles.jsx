@@ -64,7 +64,7 @@ const FeaturedArticles = () => {
                                 </Link>
                             </div>
                             <div className="flex flex-col pt-4 pb-6 px-8">
-                                <h3 className="text-[20px] leading-[24px] font-semibold pb-2 text-customBlackOne">Artsmarkets edge platform</h3>
+                                <h3 className="text-[20px] leading-[24px] font-semibold pb-2 text-customBlackOne">Artsmrkts edge platform</h3>
                                 <p className="text-[20px] leading-[24px] max-w-96 pb-4 text-customBlackOne">Why is the Modify position button greywd out when I try to set SL/TP for an existing order?</p>
                                 <Link href="/categories-and-articles" rel="noopener noreferrer">
                                     <button type="button"
@@ -77,7 +77,7 @@ const FeaturedArticles = () => {
                         <li className="flex flex-row border-t-[1px] border-customGrey border-solid">
                             <div className="flex flex-col  pt-4 pb-6 pr-8 max-w-72 w-full border-r-[1px] border-customGrey border-solid ">
                                 <h3 className="text-[20px] leading-[24px] font-semibold pb-2 text-customBlackOne">Deposit/Withdrawal</h3>
-                                <p className="text-[20px] leading-[24px] pb-4 text-customBlackOne">What mwthods can I use deposit funds into myArtsmarkets account?</p>
+                                <p className="text-[20px] leading-[24px] pb-4 text-customBlackOne">What mwthods can I use deposit funds into myArtsmrkts account?</p>
                                 <Link href="/categories-and-articles" rel="noopener noreferrer">
                                     <button type="button"
                                             className="bg-white w-max cursor-pointer items-center justify-center rounded-[44px] border-[1px] border-customGrey px-4 py-2 hover:bg-customGreyTwo active:bg-customGrey">
@@ -87,7 +87,7 @@ const FeaturedArticles = () => {
                             </div>
                             <div className="flex flex-col  pt-4 pb-6 px-8  max-w-72 w-full  border-r-[1px] border-customGrey border-solid">
                                 <h3 className="text-[20px] leading-[24px] font-semibold pb-2 text-customBlackOne">Deposit/Withdrawal</h3>
-                                <p className="text-[20px] leading-[24px] pb-4 text-customBlackOne">How do I transfer funds from my Artsmarkets account?</p>
+                                <p className="text-[20px] leading-[24px] pb-4 text-customBlackOne">How do I transfer funds from my Artsmrkts account?</p>
                                 <Link href="/categories-and-articles" rel="noopener noreferrer">
                                     <button type="button"
                                             className="bg-white w-max cursor-pointer items-center justify-center rounded-[44px] border-[1px] border-customGrey px-4 py-2 hover:bg-customGreyTwo active:bg-customGrey">

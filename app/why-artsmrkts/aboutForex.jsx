@@ -7,7 +7,7 @@ const AboutForex = () => {
                 <div className="flex flex-col w-full relative">
                     <Image src="/man counts money.png" alt="man counts money" height={331} width={497} className="object-cover absolute right-0 bottom-0"/>
                     <h2 className="text-[32px] font-medium leading-[38.1px] text-customBlueThree">Here’s how trading
-                        Forex with Artsmarkets can enhance <br/> your trading experience:</h2>
+                        Forex with Artsmrkts can enhance <br/> your trading experience:</h2>
                     <ul className="flex flex-col pt-11 pb-10">
                         <li className="flex flex-row">
                             <div className="text-[20px] leading-[24px] h-36 p-8 max-w-72 w-full border-r-[1px] border-customGrey border-solid">

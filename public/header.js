@@ -57,7 +57,7 @@ const Header = () => {
           <Link href="/" rel="noopener noreferrer">
             <Image
               src="logo.svg"
-              alt="artsmarket company logo"
+              alt="artsmrkt company logo"
               width={30}
               height={21}
               className="max-h-full max-w-full object-contain"

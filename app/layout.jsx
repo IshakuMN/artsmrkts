@@ -12,8 +12,8 @@ const work_sans = Work_Sans({
 });
 
 export const metadata = {
-  title: "artsmarket",
-  description: "artsmarket",
+  title: "artsmrkt",
+  description: "artsmrkt",
 };
 
 export default function RootLayout({ children }) {

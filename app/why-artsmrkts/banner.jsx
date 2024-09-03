@@ -8,10 +8,10 @@ const Banner = () => {
                 <div className="flex flex-row justify-between max-w-[1440px]">
                     <Image src="/drum.svg" alt="drum" width={523} height={655} className="object-contain"/>
                     <div className="flex flex-col gap-4 pt-[183px] pb-[213px] mr-32 relative z-20 max-w-[471px]">
-                        <h1 className="text-[44px] leading-[52.8px] font-medium text-customBlackFour">Artsmarkets -
+                        <h1 className="text-[44px] leading-[52.8px] font-medium text-customBlackFour">Artsmrkts -
                             serving traders responsibly</h1>
                         <p className="text-[18px] leading-[21.6px] text-customBlackOne">Trusted by millions in over 100
-                            countries, Artsmarkets is a leading broker dedicated to providing reliable service and
+                            countries, Artsmrkts is a leading broker dedicated to providing reliable service and
                             building long-term relationships with our clients.</p>
                     </div>
                 </div>
@@ -24,7 +24,7 @@ const Banner = () => {
                             innovative Forex tools and tailored services to support your success. As an international
                             broker, we offer diverse account types and trading instruments.</p>
                         <div className="flex flex-col gap-4 max-w-[390px]">
-                            <p className="text-[16px] leading-[19.2px] text-customOrangeThree">Join Artsmarkets and
+                            <p className="text-[16px] leading-[19.2px] text-customOrangeThree">Join Artsmrkts and
                                 become a
                                 part of our global trading community</p>
                             <button
