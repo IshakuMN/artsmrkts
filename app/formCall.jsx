@@ -1,10 +1,11 @@
 "use client";
-import {Checkbox} from "@/components/ui/checkbox";
+import { Checkbox } from "@/components/ui/checkbox";
 import Image from "next/image";
 import PhoneInput from "react-phone-number-input";
-import {useState} from "react";
+import { useState } from "react";
+import { validateName, validateEmail, validatePhone, validateLanguage } from "./utils/validators";
 
-const FormCall = ({setFormSubmitted, setIsActive}) => {
+const FormCall = ({ setFormSubmitted, setIsActive }) => {
     const languages = ["Eng", "Ru", "Ar"];
     const [inputValueName, setInputValueName] = useState('');
     const [inputValueEmail, setInputValueEmail] = useState('');
@@ -16,81 +17,33 @@ const FormCall = ({setFormSubmitted, setIsActive}) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [languageError, setLanguageError] = useState("");
 
-    const validateName = (name) => {
-        const namePattern = /^[A-Za-z\s\-']+$/;
-        if (name.length < 1) {
-            setNameError('Name is required');
-        } else if (name.length < 2) {
-            setNameError('Name must be at least 2 characters long');
-        } else if (name.length > 50) {
-            setNameError('The name must contain no more than 50 characters.');
-        } else if (!namePattern.test(name)) {
-            setNameError('Name can only contain letters, spaces, dashes, and apostrophes');
-        } else {
-            setNameError('');
-        }
-    };
-
-    const validateEmail = (email) => {
-        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        if (!email) {
-            setEmailError('Email is required');
-        } else if (email.length < 4) {
-            setEmailError('Email is too short. Minimum length is 4 characters');
-        } else if (email.length > 50) {
-            setEmailError('Email is too long. Maximum length is 50 characters');
-        } else if (!emailPattern.test(email)) {
-            setEmailError('Invalid email address');
-        } else {
-            setEmailError('');
-        }
-    };
-
-    const validatePhone = (phone) => {
-        if (!phone) {
-            setPhoneError('Phone number is required');
-        } else if (!/^(\+?\d{1,3}[-.\s]?)?\(?\d{1,4}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/.test(phone)) {
-            setPhoneError('Invalid phone number format');
-        } else {
-            setPhoneError('');
-        }
-    };
-    const validateLanguage = (language) => {
-        if (!language) {
-            setLanguageError('Language is required');
-        } else {
-            setLanguageError('');
-        }
-    }
-
-
     const handleChange = (eventOrValue, name) => {
         if (name === 'telephone') {
             setInputValuePhone(eventOrValue);
-            validatePhone(eventOrValue);
+            setPhoneError(validatePhone(eventOrValue));
             return;
         }
 
         if (typeof eventOrValue === 'string') {
             setInputValueLanguage(eventOrValue);
-            validateLanguage(eventOrValue);
+            setLanguageError(validateLanguage(eventOrValue));
             setIsDropdownOpen(false);
             return;
         }
 
-        const {name: fieldName, value} = eventOrValue.target;
+        const { name: fieldName, value } = eventOrValue.target;
         switch (fieldName) {
             case 'name':
                 setInputValueName(value);
-                validateName(value);
+                setNameError(validateName(value));
                 break;
             case 'email':
                 setInputValueEmail(value);
-                validateEmail(value);
+                setEmailError(validateEmail(value));
                 break;
             case 'language':
                 setInputValueLanguage(value);
-                validateLanguage(value);
+                setLanguageError(validateLanguage(value));
                 break;
             default:
                 break;
@@ -114,10 +67,11 @@ const FormCall = ({setFormSubmitted, setIsActive}) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        validateName(inputValueName);
-        validateEmail(inputValueEmail);
-        validatePhone(inputValuePhone);
-        validateLanguage(inputValueLanguage);
+        setNameError(validateName(inputValueName));
+        setEmailError(validateEmail(inputValueEmail));
+        setPhoneError(validatePhone(inputValuePhone));
+        setLanguageError(validateLanguage(inputValueLanguage));
+
         if (!nameError && !emailError && !phoneError && !languageError) {
             alert('Form submitted successfully!');
             setInputValueName('');
@@ -133,7 +87,9 @@ const FormCall = ({setFormSubmitted, setIsActive}) => {
         }
     };
 
-    return (<form className="flex flex-col gap-2" name="form-call" onSubmit={handleSubmit}>
+
+    return (
+        <form className="flex flex-col gap-2" name="form-call" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-1">
             <label htmlFor="name"
                    className="text-[14px] leading-[16.8px] text-customGreyEleven">Name</label>
