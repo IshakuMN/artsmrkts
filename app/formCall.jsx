@@ -4,6 +4,8 @@ import Image from "next/image";
 import PhoneInput from "react-phone-number-input";
 import { useState } from "react";
 import { validateName, validateEmail, validatePhone, validateLanguage } from "./utils/validators";
+import {addContactWithLanguage, checkEmailExists, checkPhoneExists} from "../lib/supabaseClient";
+
 
 const FormCall = ({ setFormSubmitted, setIsActive }) => {
     const languages = ["Eng", "Ru", "Ar"];
@@ -65,7 +67,7 @@ const FormCall = ({ setFormSubmitted, setIsActive }) => {
         }
     };
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         setNameError(validateName(inputValueName));
         setEmailError(validateEmail(inputValueEmail));
@@ -73,17 +75,34 @@ const FormCall = ({ setFormSubmitted, setIsActive }) => {
         setLanguageError(validateLanguage(inputValueLanguage));
 
         if (!nameError && !emailError && !phoneError && !languageError) {
-            alert('Form submitted successfully!');
-            setInputValueName('');
-            setInputValueEmail('');
-            setInputValuePhone('');
-            setInputValueLanguage('');
-            setNameError('');
-            setEmailError('');
-            setPhoneError('');
-            setLanguageError('');
-            setIsActive(false);
-            setFormSubmitted(true);
+            try {
+
+                const emailExists = await checkEmailExists(inputValueEmail);
+                if (emailExists) {
+                    setEmailError("This email is already in use.");
+                    return;
+                }
+
+                const phoneExists = await checkPhoneExists(inputValuePhone);
+                if (phoneExists) {
+                    setPhoneError("This phone number is already in use.");
+                    return;
+                }
+
+                await addContactWithLanguage(inputValueName, inputValueEmail, inputValuePhone, inputValueLanguage);
+                setInputValueName('');
+                setInputValueEmail('');
+                setInputValuePhone('');
+                setInputValueLanguage('');
+                setNameError('');
+                setEmailError('');
+                setPhoneError('');
+                setLanguageError('');
+                setIsActive(false);
+                setFormSubmitted(true);
+            } catch (error) {
+                console.error("Error adding contact:", error);
+            }
         }
     };
 

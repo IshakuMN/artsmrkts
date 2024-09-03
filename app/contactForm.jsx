@@ -4,6 +4,8 @@ import { useState } from 'react';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
 import { validateName, validateEmail, validatePhone, validateMessage } from './utils/validators';
+import {addContactWithMessage, checkEmailExists, checkPhoneExists} from "../lib/supabaseClient";
+
 
 const ContactForm = () => {
     const [inputValueName, setInputValueName] = useState('');
@@ -56,23 +58,41 @@ const ContactForm = () => {
         }
     };
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         setNameError(validateName(inputValueName));
         setEmailError(validateEmail(inputValueEmail));
         setPhoneError(validatePhone(inputValuePhone));
         setMessageError(validateMessage(inputValueMessage));
 
+
         if (!nameError && !emailError && !phoneError && !messageError) {
-            alert('Form submitted successfully!');
-            setInputValueName('');
-            setInputValueEmail('');
-            setInputValuePhone('');
-            setInputValueMessage('');
-            setNameError('');
-            setEmailError('');
-            setPhoneError('');
-            setMessageError('');
+            try {
+
+                const emailExists = await checkEmailExists(inputValueEmail);
+                if (emailExists) {
+                    setEmailError("This email is already in use.");
+                    return;
+                }
+
+                const phoneExists = await checkPhoneExists(inputValuePhone);
+                if (phoneExists) {
+                    setPhoneError("This phone number is already in use.");
+                    return;
+                }
+
+                await addContactWithMessage(inputValueName, inputValueEmail, inputValuePhone, inputValueMessage);
+                setInputValueName('');
+                setInputValueEmail('');
+                setInputValuePhone('');
+                setInputValueMessage('');
+                setNameError('');
+                setEmailError('');
+                setPhoneError('');
+                setMessageError('');
+            } catch (error) {
+                console.log("Error adding contact:", error);
+            }
         }
     };
 
