@@ -6,7 +6,6 @@ export default function Page() {
         <main>
             <BannerCareer/>
             <Growth/>
-
         </main>
     );
 }
