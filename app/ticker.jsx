@@ -1,73 +1,53 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 const Ticker = () => {
-  useEffect(() => {
-    if (document.querySelector(".tradingview-widget-container__widget script"))
-      return;
+  const containerRef = useRef(null);
 
+  useEffect(() => {
     const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.async = true;
     script.src =
       "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js";
-
-    script.onload = () => {
-      console.log("TradingView widget script loaded successfully.");
-    };
-
-    script.onerror = () => {
-      console.error("Error loading TradingView widget script.");
-    };
-
-    const scriptContent = `
-    {
-      "symbols": [
-        {
-          "proName": "FOREXCOM:SPXUSD",
-          "title": "S&P 500 Index"
-        },
-        {
-          "proName": "FOREXCOM:NSXUSD",
-          "title": "US 100 Cash CFD"
-        },
-        {
-          "proName": "FX_IDC:EURUSD",
-          "title": "EUR to USD"
-        },
-        {
-          "proName": "BITSTAMP:BTCUSD",
-          "title": "Bitcoin"
-        },
-        {
-          "proName": "BITSTAMP:ETHUSD",
-          "title": "Ethereum"
-        }
+    script.async = true;
+    script.innerHTML = JSON.stringify({
+      symbols: [
+        { proName: "FOREXCOM:SPXUSD", title: "S&P 500 Index" },
+        { proName: "FOREXCOM:NSXUSD", title: "US 100 Cash CFD" },
+        { proName: "FX_IDC:EURUSD", title: "EUR to USD" },
+        { proName: "BITSTAMP:BTCUSD", title: "Bitcoin" },
+        { proName: "BITSTAMP:ETHUSD", title: "Ethereum" },
       ],
-      "showSymbolLogo": true,
-      "isTransparent": true,
-      "displayMode": "adaptive",
-      "colorTheme": "light",
-      "locale": "en"
-    }`;
+      showSymbolLogo: true,
+      isTransparent: true,
+      displayMode: "adaptive",
+      colorTheme: "light",
+      locale: "en",
+    });
 
-    script.innerHTML = scriptContent;
-    document
-      .querySelector(".tradingview-widget-container__widget")
-      .appendChild(script);
+    if (containerRef.current) {
+      containerRef.current.appendChild(script);
+    }
+
+    return () => {
+      if (containerRef.current) {
+        containerRef.current.innerHTML = ""; // Cleanup the widget on component unmount
+      }
+    };
   }, []);
 
   return (
-    <div className="tradingview-widget-container">
-      <div className="tradingview-widget-container__widget"></div>
-      <div className="tradingview-widget-copyright">
+    <div
+      className="tradingview-widget-container scale-1-5 mt-4 !text-2xl"
+      ref={containerRef}
+    >
+      <div className="tradingview-widget-container__widget !text-2xl"></div>
+      <div className="tradingview-widget-copyright !text-2xl">
         <a
           href="https://www.tradingview.com/"
           rel="noopener nofollow"
           target="_blank"
-        >
-          <span className="blue-text">Track all markets on TradingView</span>
-        </a>
+          className="!text-2xl"
+        ></a>
       </div>
     </div>
   );

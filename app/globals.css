@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles.css */
+.scale-1-5 {
+  transform: scale(1.1);
+  transform-origin: top left; /* Adjust the origin as needed */
+}
+
 .bg-custom-gradient-bonus {
   background: linear-gradient(
     343.36deg,
