@@ -71,7 +71,7 @@ const CardTools = ({
       {isActive ? (
         <div className="absolute left-0 top-0 z-30 mx-auto flex w-full flex-row gap-6 rounded-t-3xl pb-[51px] pl-8 pt-8">
           <div className="flex h-[46px] w-[46px] items-center justify-center rounded-[100px] bg-customOrangeEight">
-            <Image src="arrowgroup.svg" alt="arrow" width={22} height={16} />
+            <Image src="/arrowGroup.svg" alt="arrow" width={22} height={16} />
           </div>
           <p className="text-[44px] font-semibold leading-[52.8px] text-white">
             {title}
