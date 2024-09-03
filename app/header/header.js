@@ -162,7 +162,7 @@ const Header = () => {
                 { href: "/client-protection", text: "Client Fund Protection" },
                 { href: "/legal-documents", text: "legal documents" },
                 { href: "/contact-us", text: "Contact us" },
-                { href: "/career-in-artsmrkts", text: "Career in Artsmrkts" },
+                { href: "/career", text: "Career in Artsmrkts" },
                 { href: "/help-center", text: "Help center" },
                 { href: "/welcome-bonus", text: "Welcome bonus" },
                 { href: "/re-deposit-bonus", text: "Re-deposit bonus" },
@@ -219,7 +219,7 @@ const Header = () => {
             onMouseLeave={() => setIsHoveredSearch(false)}
             onClick={() => setIsSearchFind(!isSearchFind)}
           >
-<Image
+            <Image
               src={isHoveredSearch ? "searchOrange.svg" : "search.svg"}
               alt="search"
               width={14}

@@ -48,8 +48,11 @@ const Team = () => {
         </button>
       </div>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {cardItems.map((item) => (
-          <div className="flex max-w-[320px] items-center justify-between rounded-2xl border bg-[#FAFAFB] px-6">
+        {cardItems.map((item, index) => (
+          <div
+            key={index}
+            className="flex max-w-[320px] items-center justify-between rounded-2xl border bg-[#FAFAFB] px-6"
+          >
             <span className="text-lg">{item.title}</span>
             <Image src={item.image} width={100} height={100} />
           </div>
