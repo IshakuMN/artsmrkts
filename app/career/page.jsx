@@ -2,13 +2,17 @@ import React from "react";
 import Image from "next/image";
 import TeamImages from "./teamImages";
 
+import BannerCareer from "../bannerCareer";
+import Growth from "../growth";
+
 const page = () => {
   return (
-    <div>
+    <main>
+      <BannerCareer />
+      <Growth />
       <Team />
-      <Team2 />
       <TeamImages />
-    </div>
+    </main>
   );
 };
 
@@ -53,8 +57,4 @@ const Team = () => {
       </div>
     </div>
   );
-};
-
-const Team2 = () => {
-  return <div></div>;
 };
