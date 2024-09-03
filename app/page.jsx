@@ -7,14 +7,14 @@ import Tools from "@/app/tools";
 import TradeTable from "./tradeTable";
 import MobileScroll from "./mobileScroll";
 import Cards from "./cards";
-import TradeScroll from "./tradeScroll";
+import Ticker from "./ticker";
 
 export default function Home() {
   return (
     <main className="relative">
       <Dialogue />
       <Banner />
-      <TradeScroll />
+      <Ticker />
       <Cards />
       <MobileScroll />
       <Trade />
