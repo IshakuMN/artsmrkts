@@ -38,7 +38,7 @@ const MarketTrends = () => {
   ];
 
   return (
-    <section className="mx-auto max-w-[1280px]">
+    <section className="mx-auto max-w-screen-xl">
       <h2 className="mb-14 text-[44px] font-medium leading-[52.8px] text-customBlueThree">
         Keep up with market trends
       </h2>

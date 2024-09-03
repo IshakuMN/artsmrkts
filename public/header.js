@@ -57,7 +57,7 @@ const Header = () => {
           <Link href="/" rel="noopener noreferrer">
             <Image
               src="logo.svg"
-              alt="artsmarket company logo"
+              alt="artsmrkt company logo"
               width={30}
               height={21}
               className="max-h-full max-w-full object-contain"
@@ -233,7 +233,7 @@ const Header = () => {
           <Link href="/login">
             <button
               type="button"
-              className="flex w-[88px] cursor-pointer flex-row items-center justify-center rounded-[44px] bg-customBlueFon px-4 py-2 hover:bg-customBlue active:bg-customBlueTwo"
+              className="fl ex w-[88px] cursor-pointer flex-row items-center justify-center rounded-[44px] bg-customBlueFon px-4 py-2 hover:bg-customBlue active:bg-customBlueTwo"
             >
               <span className="text-[14px] leading-[16.8px] text-white">
                 Login

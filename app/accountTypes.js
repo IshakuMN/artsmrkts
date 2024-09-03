@@ -97,7 +97,7 @@ const AccountTypes = () => {
                 type="button"
                 className="flex w-full cursor-pointer items-center justify-center rounded-[44px] bg-customBlueFon py-3 transition-colors duration-300 ease-in-out hover:bg-customBlue active:bg-customBlueTwo"
               >
-                <span className="text-[20px] font-medium leading-[24px] text-white">
+                <span className="text-[20px] font-semibold leading-[24px] text-white">
                   Register
                 </span>
               </button>
@@ -188,7 +188,7 @@ const AccountTypes = () => {
                 type="button"
                 className="flex w-full cursor-pointer items-center justify-center rounded-[44px] bg-customOrangeTwo py-3 transition-colors duration-300 ease-in-out hover:bg-customOrange active:bg-customOrangeThree"
               >
-                <span className="text-[20px] font-medium leading-[24px] text-white">
+                <span className="text-[20px] font-semibold leading-[24px] text-white">
                   Register
                 </span>
               </button>
@@ -264,7 +264,7 @@ const AccountTypes = () => {
                 type="button"
                 className="flex w-full cursor-pointer items-center justify-center rounded-[44px] bg-customBlueFon py-3 transition-colors duration-300 ease-in-out hover:bg-customBlue active:bg-customBlueTwo"
               >
-                <span className="text-[20px] font-medium leading-[24px] text-white">
+                <span className="text-[20px] font-semibold leading-[24px] text-white">
                   Register
                 </span>
               </button>

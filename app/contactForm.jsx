@@ -1,8 +1,9 @@
 "use client";
-import Image from "next/image";
-import {useState} from "react";
+import Image from 'next/image';
+import { useState } from 'react';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
+import { validateName, validateEmail, validatePhone, validateMessage } from './utils/validators';
 
 const ContactForm = () => {
     const [inputValueName, setInputValueName] = useState('');
@@ -14,60 +15,10 @@ const ContactForm = () => {
     const [phoneError, setPhoneError] = useState('');
     const [messageError, setMessageError] = useState('');
 
-    const validateName = (name) => {
-        const namePattern = /^[A-Za-z\s\-']+$/;
-        if (name.length < 1) {
-            setNameError('Name is required');
-        } else if (name.length < 2) {
-            setNameError('Name must be at least 2 characters long');
-        } else if (name.length > 50) {
-            setNameError('The name must contain no more than 50 characters.');
-        } else if (!namePattern.test(name)) {
-            setNameError('Name can only contain letters, spaces, dashes, and apostrophes');
-        } else {
-            setNameError('');
-        }
-    };
-
-    const validateEmail = (email) => {
-        const emailPattern =  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        if (!email) {
-            setEmailError('Email is required');
-        } else if (email.length < 4) {
-            setEmailError('Email is too short. Minimum length is 4 characters');
-        } else if (email.length > 50) {
-            setEmailError('Email is too long. Maximum length is 50 characters');
-        } else if (!emailPattern.test(email)) {
-            setEmailError('Invalid email address');
-        } else {
-            setEmailError('');
-        }
-    };
-
-    const validatePhone = (phone) => {
-        if (!phone) {
-            setPhoneError('Phone number is required');
-        } else if (!/^(\+?\d{1,3}[-.\s]?)?\(?\d{1,4}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/.test(phone)) {
-            setPhoneError('Invalid phone number format');
-        } else {
-            setPhoneError('');
-        }
-    };
-
-    const validateMessage = (message) => {
-        if (message.length < 1) {
-            setMessageError('Message is required');
-        } else if (message.length > 2000) {
-            setMessageError('Message too long. Message must be no more than 2000 characters');
-        } else {
-            setMessageError('');
-        }
-    };
-
     const handleChange = (eventOrValue, name) => {
         if (name === 'telephone') {
             setInputValuePhone(eventOrValue);
-            validatePhone(eventOrValue);
+            setPhoneError(validatePhone(eventOrValue));
             return;
         }
 
@@ -75,15 +26,15 @@ const ContactForm = () => {
         switch (fieldName) {
             case 'name':
                 setInputValueName(value);
-                validateName(value);
+                setNameError(validateName(value));
                 break;
             case 'email':
                 setInputValueEmail(value);
-                validateEmail(value);
+                setEmailError(validateEmail(value));
                 break;
             case 'message':
                 setInputValueMessage(value);
-                validateMessage(value);
+                setMessageError(validateMessage(value));
                 break;
             default:
                 break;
@@ -100,25 +51,18 @@ const ContactForm = () => {
                 setInputValueEmail('');
                 setEmailError('');
                 break;
-            case 'telephone':
-                setInputValuePhone('');
-                setPhoneError('');
-                break;
-            case 'message':
-                setInputValueMessage('');
-                setMessageError('');
-                break;
             default:
                 break;
         }
     };
 
-    const handleSubmit =  (event) => {
+    const handleSubmit = (event) => {
         event.preventDefault();
-        validateName(inputValueName);
-        validateEmail(inputValueEmail);
-        validatePhone(inputValuePhone);
-        validateMessage(inputValueMessage);
+        setNameError(validateName(inputValueName));
+        setEmailError(validateEmail(inputValueEmail));
+        setPhoneError(validatePhone(inputValuePhone));
+        setMessageError(validateMessage(inputValueMessage));
+
         if (!nameError && !emailError && !phoneError && !messageError) {
             alert('Form submitted successfully!');
             setInputValueName('');
@@ -131,6 +75,7 @@ const ContactForm = () => {
             setMessageError('');
         }
     };
+
     return (
         <form className="flex flex-col gap-2" name="form-contact" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-1">
