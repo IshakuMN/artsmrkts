@@ -13,7 +13,7 @@ export default function Page() {
         <main className="relative">
             <HelpSection/>
             <section className="relative">
-                <div className="max-w-[1280px] mx-auto pt-16 pb-10 flex flex-col gap-11">
+                <div className="max-w-screen-xl mx-auto pt-16 pb-10 flex flex-col gap-11">
                     <h2 className="text-[32px] font-medium leading-[38.4px] text-customBlueThree">We are here to
                         help</h2>
                     <div className="flex flex-row gap-11 h-[295px]">

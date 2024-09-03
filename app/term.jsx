@@ -11,7 +11,7 @@ const Term = ({
                   imageAlt
               }) => {
     return (
-        <div className="max-w-[1280px] mx-auto flex flex-row relative z-20">
+        <div className="max-w-screen-xl mx-auto flex flex-row relative z-20">
             <div className="flex flex-col gap-8">
                 <h2 className="text-[32px] font-medium leading-[38.4px] text-customBlueThree">Terms and conditions:</h2>
                 <div className="flex flex-row items-center">

@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutForex = () => {
     return (
         <section className="rounded-t-[80px]  pt-24 relative">
-            <div className="max-w-[1280px] mx-auto">
+            <div className="max-w-screen-xl mx-auto">
                 <div className="flex flex-col w-full relative">
                     <Image src="/man counts money.png" alt="man counts money" height={331} width={497} className="object-cover absolute right-0 bottom-0"/>
                     <h2 className="text-[32px] font-medium leading-[38.1px] text-customBlueThree">Here’s how trading

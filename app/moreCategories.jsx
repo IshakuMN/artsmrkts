@@ -68,7 +68,7 @@ const MoreCategories = () => {
     }, []);
 
     return (
-        <section className="mx-auto max-w-[1280px] flex flex-col gap-8 py-16">
+        <section className="mx-auto max-w-screen-xl flex flex-col gap-8 py-16">
             <h2 className="text-[32px] font-medium leading-[38.1px] text-customBlueThree">More categories:</h2>
             <Slider {...settings}
                     className="flex-row gap-5 flex-wrap"

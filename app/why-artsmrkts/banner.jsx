@@ -17,7 +17,7 @@ const Banner = () => {
                 </div>
                 <div className="bg-white rounded-t-[80px] relative z-20">
                     <div
-                        className="flex flex-row justify-between gap-36 mx-auto  pt-8 pb-4  max-w-[1280px]">
+                        className="flex flex-row justify-between gap-36 mx-auto  pt-8 pb-4  max-w-screen-xl">
                         <p className="text-[20px] leading-[24px] text-customGreyEleven max-w-[738px]">Since 2018,
                             Artsmrkts
                             has provided

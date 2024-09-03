@@ -27,7 +27,7 @@ const Promo = () => {
         <>
             <section
                 className="rounded-t-[80px]  py-16 relative bg-custom-gradient-why border-b-[1px] border-customGrey border-solid ">
-                <div className="max-w-[1280px] mx-auto flex flex-row gap-5 pb-16">
+                <div className="max-w-screen-xl mx-auto flex flex-row gap-5 pb-16">
                     <div className="flex flex-col p-8 gap-4">
                         <div className="flex flex-row gap-2 items-center">
                             <Image src="/summer.svg" alt="summer" className="object-contain" height={28} width={28}/>
@@ -48,7 +48,7 @@ const Promo = () => {
                             be.</p>
                     </div>
                 </div>
-                <div className="max-w-[1280px] mx-auto pt-24 flex flex-row gap-4">
+                <div className="max-w-screen-xl mx-auto pt-24 flex flex-row gap-4">
                     <div
                         className="max-w-[968px]  flex flex-row rounded-3xl bg-customGreyFour relative h-[380px] overflow-hidden">
                         <div className="bg-custom-gradient-six absolute z-10 h-full w-full"></div>

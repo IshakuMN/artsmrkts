@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutBonus = () => {
     return (
         <section>
-            <div className="max-w-[1280px] flex flex-row pt-20 pb-16 mx-auto relative">
+            <div className="max-w-screen-xl flex flex-row pt-20 pb-16 mx-auto relative">
                 <Image src="/men.png" alt="men" width={519}  height={341} className="object-contain absolute left-[20%] bottom-0"/>
                 <div className="flex flex-row gap-28 border-b-[1px] border-customGrey border-solid h-52">
                     <h2 className="text-[32px] font-medium leading-[38.4px] text-customBlueThree max-w-[505px]">Benefit 15% bonus from each deposit of the clients registered by your personal link.</h2>

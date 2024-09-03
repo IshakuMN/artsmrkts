@@ -53,6 +53,7 @@ const config = {
         customOrangeSix: "#F15C27",
         customOrangeSeven: "#F36A36",
         customOrangeEight: "#F36934",
+        customOrangeNine:  "#EF8A66",
         customGreyOne: "#F3F5FC",
         customWhiteOne: "#FDFDFF",
         customGreyTen: "#F4F4F4",
