@@ -29,13 +29,13 @@ const Tools = () => {
         </p>
       </div>
       <div className="flex flex-col gap-4">
-        <ul className="flex flex-row gap-3">
+        <ul className="flex flex-row flex-nowrap gap-3 overflow-x-auto">
           {Object.keys(cardText).map((key, index) => (
             <CardTools
               key={key}
               id={key}
               title={titles[key]}
-              imageSrc={images[key]} // Передаем соответствующее изображение
+              imageSrc={images[key]}
               isActive={isClickedCard === key}
               isHovered={hoveredIndex === key}
               onClick={setIsClickedCard}
