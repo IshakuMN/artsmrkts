@@ -1,12 +1,12 @@
 //loayout
-import { Work_Sans } from "next/font/google";
+import { Arimo } from "next/font/google";
 import "./globals.css";
 import Header from "./header/header";
 import Footer from "@/app/footer";
 import Dialogue from "@/app/dialogue";
 import React from "react";
 
-const work_sans = Work_Sans({
+const work_sans = Arimo({
   subsets: ["latin"],
   // weight: ["400", "500", "600", "700", "800"],
 });

@@ -37,24 +37,23 @@ export async function GET() {
         name: "EURUSD",
         description: "Euro vs US Dollar",
         img: "/euro.png",
-      },
-      {
-        symbol: "AAPL",
-        name: "APPL",
-        description: "Apple Inc.",
-        img: "/apple.png",
-      },
-      {
+      },{
         symbol: "BRN",
         name: "BRENT",
         description: "Brent Crude Oil",
         img: "/oil.png",
       },
       {
-        symbol: "X:BTCUSD",
-        name: "Bitcoin",
-        description: "Bitcoin vs US Dollar",
-        img: "/bitcoin.png",
+        symbol: "US30",
+        name: "US30",
+        description: "US 30Index",
+        img: "/us.png",
+      },
+      {
+        symbol: "GBPUSD",
+        name: "GBPUSD",
+        description: "Pound vs US Dollar",
+        img: "/GBPUSD.png",
       },
     ];
 

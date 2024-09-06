@@ -12,8 +12,7 @@ const AccountTypes = () => {
             trading strategy
           </h2>
           <p className="max-w-[476px] text-[16px] leading-[19.2px]">
-            Tired of high spreads and commissions? You want to gain every penny
-            from the market, check our account types and maximize your profit.
+            Tired of hight spreads and commissions? You want to gain every penny from the market, check our account types and maximize your profit.
           </p>
         </div>
         <div className="flex flex-row justify-between gap-12">
@@ -28,7 +27,7 @@ const AccountTypes = () => {
               <span className="mr-1 text-[70px] font-medium leading-[84px] text-customBlackFour">
                 100
               </span>
-              <span className="relative bottom-1 mr-2 text-[14px] font-medium leading-[16.8px] text-customBlackFour">
+              <span className="relative bottom-1 mr-2 text-[14px] font-semibold leading-[16.8px] text-customBlackFour">
                 $
               </span>
               <span className="relative bottom-5 max-w-[114px] text-[14px] leading-[16.8px] text-customGreyEight">
@@ -47,7 +46,7 @@ const AccountTypes = () => {
                   <span className="relative -bottom-3 text-[44px] font-medium leading-[52.8px] text-customBlackFour">
                     16
                   </span>
-                  <span className="text-[14px] leading-[16.8px] text-customBlackFour">
+                  <span className="text-[14px] leading-[16.8px] text-customBlackFour font-semibold">
                     pips
                   </span>
                 </p>
@@ -58,7 +57,7 @@ const AccountTypes = () => {
                   <span className="relative -bottom-3 text-[44px] font-medium leading-[52.8px] text-customBlackFour">
                     0
                   </span>
-                  <span className="text-[14px] leading-[16.8px] text-customBlackFour">
+                  <span className="text-[14px] leading-[16.8px] text-customBlackFour font-semibold">
                     $
                   </span>
                 </p>
@@ -71,21 +70,21 @@ const AccountTypes = () => {
                 </span>
                 <div className="flex flex-col gap-2">
                   <div className="flex flex-row justify-end gap-2">
-                    <span className="text-[14px] font-medium leading-[16.8px] text-customBlackFour">
+                    <span className="text-[14px] font-semibold leading-[16.8px] text-customBlackFour">
                       Forex
                     </span>
-                    <span className="text-[14px] font-medium leading-[16.8px] text-customBlackFour">
+                    <span className="text-[14px] font-semibold leading-[16.8px] text-customBlackFour">
                       Metals
                     </span>
                   </div>
                   <div className="flex flex-row gap-2">
-                    <span className="text-[14px] font-medium leading-[16.8px] text-customBlackFour">
+                    <span className="text-[14px] font-semibold leading-[16.8px] text-customBlackFour">
                       Indices
                     </span>
-                    <span className="text-[14px] font-medium leading-[16.8px] text-customBlackFour">
+                    <span className="text-[14px] font-semibold leading-[16.8px] text-customBlackFour">
                       Oil
                     </span>
-                    <span className="text-[14px] font-medium leading-[16.8px] text-customBlackFour">
+                    <span className="text-[14px] font-semibold leading-[16.8px] text-customBlackFour">
                       Crypto
                     </span>
                   </div>
@@ -98,7 +97,7 @@ const AccountTypes = () => {
                 className="flex w-full cursor-pointer items-center justify-center rounded-[44px] bg-customBlueFon py-3 transition-colors duration-300 ease-in-out hover:bg-customBlue active:bg-customBlueTwo"
               >
                 <span className="text-[20px] font-semibold leading-[24px] text-white">
-                  Register
+                 Sign up
                 </span>
               </button>
             </Link>
@@ -115,14 +114,13 @@ const AccountTypes = () => {
               </div>
             </div>
             <p className="mt-16px text-[16px] leading-[19.2px] text-customGreySeven">
-              Be under the spot with our VIP account, ultra-fast position
-              execution
+              Be under the spotlights with our VIP account. Experience lower spreads and ultra-fast order execution
             </p>
             <div className="mb-8 mt-[70px] flex flex-row items-baseline">
               <span className="mr-1 text-[70px] font-medium leading-[84px] text-customBlackFour">
                 2000
               </span>
-              <span className="relative bottom-1 mr-2 text-[14px] font-medium leading-[16.8px] text-customBlackFour">
+              <span className="relative bottom-1 mr-2 text-[14px] font-semibold leading-[16.8px] text-customBlackFour">
                 $
               </span>
               <span className="relative bottom-5 max-w-[114px] text-[14px] leading-[16.8px] text-customGreyEight">
@@ -141,7 +139,7 @@ const AccountTypes = () => {
                   <span className="relative -bottom-3 text-[44px] font-medium leading-[52.8px] text-customBlackFour">
                     10
                   </span>
-                  <span className="text-[14px] leading-[16.8px] text-customBlackFour">
+                  <span className="text-[14px] leading-[16.8px] text-customBlackFour font-semibold">
                     pips
                   </span>
                 </p>
@@ -152,7 +150,7 @@ const AccountTypes = () => {
                   <span className="relative -bottom-3 text-[44px] font-medium leading-[52.8px] text-customBlackFour">
                     0
                   </span>
-                  <span className="text-[14px] leading-[16.8px] text-customBlackFour">
+                  <span className="text-[14px] leading-[16.8px] text-customBlackFour font-semibold">
                     $
                   </span>
                 </p>
@@ -165,18 +163,18 @@ const AccountTypes = () => {
                 </span>
                 <div className="flex flex-col gap-2">
                   <div className="flex flex-row justify-end gap-2">
-                    <span className="text-[14px] font-medium leading-[16.8px] text-customBlackFour">
+                    <span className="text-[14px] font-semibold leading-[16.8px] text-customBlackFour">
                       Forex
                     </span>
-                    <span className="text-[14px] font-medium leading-[16.8px] text-customBlackFour">
+                    <span className="text-[14px] font-semibold leading-[16.8px] text-customBlackFour">
                       Metals
                     </span>
                   </div>
                   <div className="flex flex-row gap-2">
-                    <span className="text-[14px] font-medium leading-[16.8px] text-customBlackFour">
+                    <span className="text-[14px] font-semibold leading-[16.8px] text-customBlackFour">
                       Indices
                     </span>
-                    <span className="text-[14px] font-medium leading-[16.8px] text-customBlackFour">
+                    <span className="text-[14px] font-semibold leading-[16.8px] text-customBlackFour">
                       Crypto
                     </span>
                   </div>
@@ -189,7 +187,7 @@ const AccountTypes = () => {
                 className="flex w-full cursor-pointer items-center justify-center rounded-[44px] bg-customOrangeTwo py-3 transition-colors duration-300 ease-in-out hover:bg-customOrange active:bg-customOrangeThree"
               >
                 <span className="text-[20px] font-semibold leading-[24px] text-white">
-                  Register
+                  Sign up
                 </span>
               </button>
             </Link>
@@ -199,14 +197,13 @@ const AccountTypes = () => {
               ECN
             </h3>
             <p className="mt-16px text-[16px] leading-[19.2px] text-customGreySeven">
-              The game changer account with almost nil spreads and zero
-              commission
+              The game-changer account with almost null spreads. Focus on FX pairs and Metals
             </p>
             <div className="mb-8 mt-[70px] flex flex-row items-baseline">
               <span className="mr-1 text-[70px] font-medium leading-[84px] text-customBlackFour">
                 5000
               </span>
-              <span className="relative bottom-1 mr-2 text-[14px] font-medium leading-[16.8px] text-customBlackFour">
+              <span className="relative bottom-1 mr-2 text-[14px] font-semibold leading-[16.8px] text-customBlackFour">
                 $
               </span>
               <span className="relative bottom-5 max-w-[114px] text-[14px] leading-[16.8px] text-customGreyEight">
@@ -225,7 +222,7 @@ const AccountTypes = () => {
                   <span className="relative -bottom-3 text-[44px] font-medium leading-[52.8px] text-customBlackFour">
                     3
                   </span>
-                  <span className="text-[14px] leading-[16.8px] text-customBlackFour">
+                  <span className="text-[14px] leading-[16.8px] text-customBlackFour font-semibold">
                     pips
                   </span>
                 </p>
@@ -236,7 +233,7 @@ const AccountTypes = () => {
                   <span className="relative -bottom-3 text-[44px] font-medium leading-[52.8px] text-customBlackFour">
                     0
                   </span>
-                  <span className="text-[14px] leading-[16.8px] text-customBlackFour">
+                  <span className="text-[14px] leading-[16.8px] text-customBlackFour font-semibold">
                     $
                   </span>
                 </p>
@@ -249,10 +246,10 @@ const AccountTypes = () => {
                 </span>
                 <div className="flex flex-col gap-2">
                   <div className="flex flex-row gap-2">
-                    <span className="text-[14px] font-medium leading-[16.8px] text-customBlackFour">
+                    <span className="text-[14px] font-semibold leading-[16.8px] text-customBlackFour">
                       Forex
                     </span>
-                    <span className="text-[14px] font-medium leading-[16.8px] text-customBlackFour">
+                    <span className="text-[14px] font-semibold leading-[16.8px] text-customBlackFour">
                       Metals
                     </span>
                   </div>
@@ -265,7 +262,7 @@ const AccountTypes = () => {
                 className="flex w-full cursor-pointer items-center justify-center rounded-[44px] bg-customBlueFon py-3 transition-colors duration-300 ease-in-out hover:bg-customBlue active:bg-customBlueTwo"
               >
                 <span className="text-[20px] font-semibold leading-[24px] text-white">
-                  Register
+                  Sign up
                 </span>
               </button>
             </Link>

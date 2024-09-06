@@ -47,17 +47,16 @@ const Banner = () => {
       <div className="mx-auto flex max-w-[1240px] flex-row gap-[123px]">
         <div className="relative z-20 mb-40 flex flex-1 flex-col pt-24">
           <h1 className="text-[54px] font-semibold leading-[64.8px] text-customBlueThree">
-            Reach your trading potential
+            Discover your personal trading potential
           </h1>
           <p className="mt-5 text-[18px] leading-[21.6px] text-customBlackOne">
-            Trade with the global recognized broker and get to unmatched trading
-            conditions on the market
+            Trade with a globally trusted broker, and have an exclusive trading experience
           </p>
           <div className="mt-11 flex flex-row gap-2">
             <Link href="/">
               <button
                 type="button"
-                className="flex cursor-pointer items-center justify-center rounded-[44px] bg-white px-[51.75px] py-3 transition-colors duration-300 ease-in-out hover:bg-customGreyTwo active:bg-customGrey"
+                className="flex cursor-pointer items-center justify-center rounded-[44px] bg-white px-[51.75px] py-3 border-[1px] border-customGrey border-solid transition-colors duration-300 ease-in-out hover:bg-customGreyTwo active:bg-customGrey"
               >
                 <span className="text-[20px] font-semibold leading-[24px] text-customBlue">
                   Try demo
@@ -70,7 +69,7 @@ const Banner = () => {
                 className="flex cursor-pointer items-center justify-center rounded-[44px] bg-customOrangeTwo px-[51.75px] py-3 transition-colors duration-300 ease-in-out hover:bg-customOrange active:bg-customOrangeThree"
               >
                 <span className="text-[20px] font-semibold leading-[24px] text-white">
-                  Register now
+                 Sign up now
                 </span>
               </button>
             </Link>
@@ -92,7 +91,7 @@ const Banner = () => {
               className="object-contain"
             />
           </div>
-          <div className="animate-slide-down relative z-50 my-auto flex flex-col items-center gap-2 pt-20">
+          <div className="animate-slide-down relative z-20 my-auto flex flex-col items-center gap-2 pt-20">
             <Image
               src="/redMask.svg"
               width={700}
@@ -129,7 +128,7 @@ const Banner = () => {
               className="object-contain"
             />
           </div>
-          <div className="animate-slide-down relative z-50 my-auto flex flex-col items-center gap-2 pb-16">
+          <div className="animate-slide-down relative z-20 my-auto flex flex-col items-center gap-2 pb-16">
             <Image
               src="/greenMask.svg"
               width={700}
@@ -205,7 +204,7 @@ const Banner = () => {
               className="relative z-20 object-contain"
             />
             <p className="relative z-20 text-[16px] leading-[19.2px] text-customBlackThree">
-              Client found
+              Client funds
               <br />
               protection
             </p>

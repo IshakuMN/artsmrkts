@@ -69,7 +69,7 @@ const CardTools = ({
         <div className="absolute left-0 top-0 z-20 h-full w-full rounded-3xl bg-customBlue opacity-40"></div>
       )}
       {isActive ? (
-        <div className="absolute left-0 top-0 z-30 mx-auto flex w-full flex-row gap-6 rounded-t-3xl pb-[51px] pl-8 pt-8">
+        <div className="absolute left-0 top-0 z-30 mx-auto flex w-full flex-row gap-6 rounded-t-3xl pb-[51px] pl-8 pt-8 bg-custom-gradient_trade">
           <div className="flex h-[46px] w-[46px] items-center justify-center rounded-[100px] bg-customOrangeEight">
             <Image src="/arrowGroup.svg" alt="arrow" width={22} height={16} />
           </div>

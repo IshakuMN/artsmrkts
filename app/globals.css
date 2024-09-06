@@ -135,6 +135,10 @@
     }
   }
 
+  .bg-custom-gradient_trade {
+    background: linear-gradient(180deg, #252D46 1.81%, rgba(98, 106, 135, 0.80458) 37%, rgba(255, 255, 255, 0) 100%);
+  }
+
   .box-shadow {
     box-shadow: 1px 2px 4px 0 #ebebebb5;
   }
@@ -153,6 +157,9 @@
 
   .box-shadow-three {
     box-shadow: 0 4px 41px 0 rgba(238, 238, 238, 1);
+  }
+  .box-shadow-search {
+    box-shadow: 1px 2px 21px 0 #E7E7E7;
   }
 
   @layer utilities {

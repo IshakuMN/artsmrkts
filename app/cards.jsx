@@ -6,10 +6,10 @@ const Cards = () => {
     <div className="mx-auto max-w-7xl">
       <div className="flex items-center justify-between">
         <h1 className="my-8 text-[44px] font-medium">
-          Trade in Forex. profit in Forex
+            Trade on Forex. Profit on Forex
         </h1>
         <button className="h-fit rounded-full bg-customBlueFon px-6 py-2 font-semibold text-white hover:bg-[#182654] active:bg-[#001240]">
-          Register
+            Sign up
         </button>
       </div>
       <div className="my-2 flex justify-between">
@@ -38,7 +38,7 @@ export const AccessCard = () => {
       <div className="relative z-10 h-full">
         {" "}
         {/* This replaces the card-content class */}
-        <h1 className="mb-3 text-xl font-medium">24/5 Access</h1>
+        <h1 className="mb-3 text-xl font-bold">24/5 Access</h1>
         <p className="w-56">
           Foreign exchange market opens Monday morning and trades through to
           Saturday morning
@@ -59,10 +59,10 @@ export const MT4Card = () => {
   return (
     <div className="relative h-[284px] w-[615px] rounded-xl border bg-customGreyFour px-8 py-6">
       <div className="absolute right-16 top-8 z-20">
-        <h1 className="mb-3 text-xl font-medium">MT4 and More</h1>
+        <h1 className="mb-3 text-xl font-bold">MT4 and more</h1>
         <p className="w-56">
           With charting and analysis, we are giving you a superior Forex trading
-          experience.
+          experience
         </p>
       </div>
       <Image
@@ -79,7 +79,7 @@ export const CustomizedService = () => {
   return (
     <div className="card-gradient-bt relative h-[284px] w-[267px] rounded-xl border bg-customGreyFour px-8 py-6">
       <div className="relative z-10 h-full">
-        <h1 className="mb-3 text-xl font-medium">Customized Service</h1>
+        <h1 className="mb-3 text-xl font-bold">Customized service</h1>
         <p className="w-48">
           Our strategies are customised for each client&apos;s flexible and
           personalized trading conditions
@@ -99,7 +99,7 @@ export const TransparentPricing = () => {
   return (
     <div className="card-gradient-tb relative h-[224px] w-[365px] rounded-xl border bg-customGreyFour px-8 pb-6 pt-14">
       <div className="relative z-10 h-full">
-        <h1 className="mb-3 text-xl font-medium">Transparent Pricing</h1>
+        <h1 className="mb-3 text-xl font-bold">Transparent pricing</h1>
         <p className="w-58">
           The accuracy of the prices in our system is so transparent that you
           can trade using a very high level of precision
@@ -119,7 +119,7 @@ export const TightSpeed = () => {
   return (
     <div className="card-gradient-bg card-r-gradient-bg relative h-[224px] w-[283px] rounded-xl border px-8 pb-6 pt-14">
       <div className="relative z-10 h-full">
-        <h1 className="mb-3 text-xl font-medium">Tight Spreads</h1>
+        <h1 className="mb-3 text-xl font-bold">Tight spreads</h1>
         <p className="w-58">
           We are keeping the spreads for all our markets consistently low to
           give you the best value service
@@ -140,7 +140,7 @@ export const FastExecution = () => {
           className="absolute -top-16"
         />
         <div className="absolute right-6">
-          <h1 className="mb-3 text-xl font-medium">Fast execution</h1>
+          <h1 className="mb-3 text-xl font-bold">Fast execution</h1>
           <p className="w-56">
             Our technology allows us to provide fast and reliable order that is
             critical to any trader success in the Forex
