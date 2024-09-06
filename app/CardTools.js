@@ -38,7 +38,7 @@ const CardTools = ({
   };
 
   const getCardWidth = () => {
-    if (isActive) return "912px";
+    if (isActive) return "807px";
     if (isHovered) return "204px";
     return "94px";
   };
@@ -88,7 +88,7 @@ const CardTools = ({
               isHovered ? "bg-customOrangeEight" : "bg-customBlueFive"
             }`}
           >
-            <Image src="arrowgroup.svg" alt="arrow" width={22} height={16} />
+            <Image src="/arrowGroup.svg" alt="arrow" width={22} height={16} />
           </div>
         </div>
       )}

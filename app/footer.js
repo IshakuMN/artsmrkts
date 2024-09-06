@@ -6,13 +6,13 @@ import { useState } from "react";
 const Footer = () => {
   const [hoveredIcon, setHoveredIcon] = useState(null);
   return (
-    <footer className="">
+    <footer className="bg-custom-gradient-two">
       <div className="mx-auto max-w-[1240px] pb-[91px] pt-[100px]">
         <div className="mb-16 flex flex-row gap-2.5">
           <Link
             href="/"
             rel="noopener noreferrer"
-            className="bg-customWhiteOne border-customGreyOne box-shadow-logo-footer flex h-[61px] w-[61px] items-center justify-center rounded-lg border-[0.77px] border-solid"
+            className="box-shadow-logo-footer flex h-[61px] w-[61px] items-center justify-center rounded-lg border-[0.77px] border-solid border-customGreyOne bg-customWhiteOne"
           >
             <Image
               src="logo.svg"
@@ -86,7 +86,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="flex flex-row gap-4">
-                <div className="flex flex-col w-[111px]">
+                <div className="flex w-[111px] flex-col">
                   <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
                     Markets & Tools
                   </p>
@@ -143,8 +143,8 @@ const Footer = () => {
             </div>
             <div className="flex flex-1 flex-col justify-between gap-8">
               <div className="flex flex-row gap-4">
-                <div className="flex flex-col w-[111px]">
-                  <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour w-[111px]">
+                <div className="flex w-[111px] flex-col">
+                  <p className="w-[111px] pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
                     Trading
                   </p>
                   <div className="h-[1px] w-full bg-customBlueFour"></div>
@@ -207,7 +207,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="flex flex-row gap-4">
-                <div className="flex flex-col w-[111px]">
+                <div className="flex w-[111px] flex-col">
                   <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
                     Markets
                   </p>
@@ -255,8 +255,8 @@ const Footer = () => {
             </div>
             <div className="flex flex-1 flex-col justify-between">
               <div className="flex flex-row gap-4">
-                <div className="flex flex-col w-[111px]">
-                  <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour  w-[111px]">
+                <div className="flex w-[111px] flex-col">
+                  <p className="w-[111px] pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
                     Platform
                   </p>
                   <div className="h-[1px] w-full bg-customBlueFour"></div>
@@ -382,7 +382,7 @@ const Footer = () => {
         </div>
         <div className="mb-[101px] flex flex-row gap-9">
           <div className="flex w-[111px] flex-col">
-            <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour w-[111px]">
+            <p className="w-[111px] pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
               Legal{" "}
             </p>
             <div className="h-[1px] w-full bg-customBlueFour"></div>
