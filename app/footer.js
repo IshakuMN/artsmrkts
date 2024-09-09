@@ -325,7 +325,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/market-overview"
+                      href="/market-news"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >

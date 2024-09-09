@@ -20,7 +20,7 @@ const RegulationsSection = () => {
     ];
 
     return (
-        <section className="mx-auto flex max-w-screen-xl flex-col pt-16 gap-[85px]">
+        <section className="mx-auto flex max-w-[1240px] flex-col pt-16 gap-[85px]">
             <div className="flex flex-row gap-20">
                 <h2 className="text-[52.8px] font-medium leading-[52.8px] text-customBlackFour flex-1">Regulations</h2>
                 <p className="text-[20px] leading-[24px] text-customBlackOne flex-1">

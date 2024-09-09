@@ -214,7 +214,7 @@ const Header = () => {
                                     { href: "/forex-glossary", text: "Forex Glossary" },
                                 ],
                                 Analytics: [
-                                    { href: "/market-overview", text: "Market overview" },
+                                    { href: "/market-news", text: "Market overview" },
                                     { href: "/caily-forecast", text: "Daily Forecast" },
                                 ],
                                 "Live Sessions & Videos": [

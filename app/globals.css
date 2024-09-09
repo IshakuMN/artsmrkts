@@ -179,6 +179,14 @@
   .bg-custom-gradient-license-two {
     background: radial-gradient(74.68% 81% at 0% 90%, rgba(209, 48, 19, 0.4) 0%, rgba(255, 233, 204, 0.4) 43.84%, rgba(250, 250, 251, 0) 100%);
   }
+  .bg-custom-gradient-trading {
+    background: linear-gradient(182.55deg, #FAFAFB 7.1%, rgba(255, 255, 255, 0) 106.62%);
+  }
+
+  .bg-radial-gradient-article {
+    background: radial-gradient(59.58% 106.29% at 70% 100%, rgba(209, 48, 19, 0.4) 0%, rgba(255, 233, 204, 0.4) 39%, rgba(250, 250, 251, 0) 75%)
+  }
+
 
   @layer utilities {
     .bg-custom-gradient {
