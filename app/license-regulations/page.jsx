@@ -2,6 +2,8 @@
 import {useState} from "react";
 import Image from "next/image";
 import {motion, AnimatePresence} from "framer-motion";
+import Link from "next/link";
+import RegulationsSection from "./RegulationsSection";
 
 export default function Page() {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +24,9 @@ export default function Page() {
                         fully segregated from the company’s own funds.
                     </p>
                 </div>
-                <div className="rounded-[44px] bg-customGreyTwo pt-8">
+                <div className="rounded-[44px] bg-customGreyTwo pt-8 box-shadow-license">
                     <div className="flex flex-col">
-                        <div className="flex flex-row justify-between items-center pb-11 px-6">
+                        <div className="flex flex-row justify-between items-center pb-11 px-6 ">
                             <p className="pl-4 pt-4 pb-6 text-[32px] leading-[38.4px] font-medium text-customBlackOne">Financial
                                 Conduct Authority (FCA)</p>
                             <button
@@ -68,7 +70,7 @@ export default function Page() {
                         </AnimatePresence>
                     </div>
                     <div
-                        className="box-shadow-license border-[1px] border-solid border-customGrey p-11 rounded-[44px] flex flex-row gap-1 justify-end">
+                        className="bg-custom-gradient-license border-[1px] border-solid border-customGrey p-11 rounded-[44px] flex flex-row gap-1 justify-end">
                         <Image src="/line2.svg" alt="line" width={231} height={4} className="object-contain"/>
                         <span className="text-[24px] font-medium leading-[28.8px] text-white">artsmrkts</span>
                     </div>
@@ -115,14 +117,28 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <section className="bg-custom-gradient-license-two">
-                <div className="relative">
-                    <div className="absolute z-20 bottom-0 right-0 w-full h-full opacity-40 bg-customGreyFifteen"></div>
-                    <div className="flex flex-row">
-                        <div className="flex flex-col">
+
+            <RegulationsSection />
+
+            <section className="bg-custom-gradient-license-two pt-16 pb-20">
+                <div className="relative mx-auto max-w-screen-xl">
+                    <div className="flex flex-row border-[1px] border-solid border-customGrey rounded-[44px] overflow-hidden">
+                        <div className="absolute z-10 bottom-0 right-0 w-full h-full opacity-10 bg-customGreyFifteen rounded-[44px]"></div>
+                        <div className="flex flex-col gap-8 py-[131px] pl-[113px] pr-[57px] relative z-20 border-r-8 border-solid border-customOrangeTwo">
                             <h3 className="text-[32px] font-medium leading-[38.4px] text-customBlackFive">Artsmrkts' online trading platforms have been selected for their reliability, security and speed.
                             </h3>
+                            <Link href="/sign-up">
+                                <button
+                                    type="button"
+                                    className="flex cursor-pointer flex-row items-center justify-center rounded-[44px] bg-customBlueFon px-[53px] py-3 hover:bg-customBlue active:bg-customBlueTwo"
+                                >
+              <span className="text-[20px] leading-[24px] text-white">
+                Sign up
+              </span>
+                                </button>
+                            </Link>
                         </div>
+                        <Image src="/comp.png" alt="comp" height={456} width={491} className="object-contain relative z-20 "/>
                     </div>
                 </div>
             </section>

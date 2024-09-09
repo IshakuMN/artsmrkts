@@ -46,6 +46,7 @@ const config: Config = {
         customGreyThirteen: "#EBEBEB",
         customGreyFourteen: "#1B1F3B",
         customGreyFifteen: "#FAFAFB",
+        customGreySixteen: "#FAFAFB66",
         customBlueSix: "#2F4DAE",
       },
 
