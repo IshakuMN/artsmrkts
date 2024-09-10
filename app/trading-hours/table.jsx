@@ -1,4 +1,4 @@
-import dataForex from "../dataForex";
+import dataForex from "../utils/dataForex";
 import Link from "next/link";
 import Image from "next/image";
 import {useState} from "react";

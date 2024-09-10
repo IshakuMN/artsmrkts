@@ -187,6 +187,11 @@
     background: radial-gradient(59.58% 106.29% at 70% 100%, rgba(209, 48, 19, 0.4) 0%, rgba(255, 233, 204, 0.4) 39%, rgba(250, 250, 251, 0) 75%)
   }
 
+  .slick-slide {
+    width: max-content !important;
+    display: flex;
+    margin-right: 44px;
+  }
 
   @layer utilities {
     .bg-custom-gradient {

@@ -221,4 +221,5 @@ const dataForex = {
     ]
 }
 
+
 export default dataForex;
