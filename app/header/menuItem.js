@@ -28,7 +28,7 @@ const MenuItem = ({label, isActive, handleClick, links = []}) => {
                 </div>
                 <div className="flex h-2.5 w-2.5 items-center justify-center">
                     <Image
-                        src={isActive || isHovered ? "arrowRed.svg" : "arrow.svg"}
+                        src={isActive || isHovered ? "/arrowRed.svg" : "/arrow.svg"}
                         alt="arrow"
                         width={7}
                         height={4}

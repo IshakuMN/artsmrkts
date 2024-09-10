@@ -1,13 +1,14 @@
 import Image from 'next/image';
-import { FaApple } from 'react-icons/fa';
-import { BsGooglePlay } from 'react-icons/bs';
-import { GrAndroid } from 'react-icons/gr';
+import {FaApple} from 'react-icons/fa';
+import {BsGooglePlay} from 'react-icons/bs';
+import {GrAndroid} from 'react-icons/gr';
 
 const MobileAppSection = () => {
     return (
         <section className="relative py-16">
             <div className="absolute w-full h-full top-0 left-0 bg-custom-gradient-license-two z-10"></div>
-            <div className="mx-auto relative z-10 h-[603px] w-full max-w-[1080px] flex-shrink-0 rounded-2xl border bg-[#F6F6F6]">
+            <div
+                className="mx-auto relative z-10 h-[603px] w-full max-w-[1080px] flex-shrink-0 rounded-2xl border bg-[#F6F6F6]">
                 <Image src="/twoPhones.png" width={412} height={676} className=""/>
                 <Image
                     src="/redFallChat.png"
@@ -16,17 +17,15 @@ const MobileAppSection = () => {
                     className="absolute bottom-0 left-0 -z-10"
                 />
                 <h2 className="absolute right-64 top-12 w-96 text-4xl font-medium">
-                    Mobile application Metatrader 5
+                    Mobile application Metatrader 4
                 </h2>
                 <div className="absolute right-10 top-1/4 flex items-start gap-x-4">
                     <Image src="/qrcode.png" width={180} height={180}/>
                     <div className="space-y-6">
                         <p className="w-60 text-sm">
-                            MetaTrader5 mobile is very similar to MetaTrader4 for PC by its
-                            functionality. This mobile application supports most PC
-                            terminal&apos;s features (all trading functions, execution modes, as
-                            well as powerful technical analysis) except for the algorithmic
-                            trading functions.
+                            MetaTrader4 mobile is very similar to MetaTrader4 for PC by its functionality. This mobile
+                            application supports most PC terminal's features (all trading functions, execution modes, as
+                            well as powerful technical analysis) except for the algorithmic trading functions.
                         </p>
                         <button className="rounded-full bg-customBlueFon px-6 py-2 text-white">
                             view our platform

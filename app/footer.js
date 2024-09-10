@@ -13,7 +13,7 @@ const Footer = () => {
             className=" flex h-[61px] w-[61px] items-center justify-center"
           >
             <Image
-              src="logo.svg"
+              src="/logo.svg"
               alt="logo"
               width={41}
               height={28}
@@ -369,7 +369,7 @@ const Footer = () => {
                 className="flex flex-col items-center gap-1"
               >
                 <Image
-                  src="apple.svg"
+                  src="/apple.svg"
                   alt="apple"
                   width={30}
                   height={30}
@@ -385,7 +385,7 @@ const Footer = () => {
                 className="flex flex-col items-center gap-1"
               >
                 <Image
-                  src="google.svg"
+                  src="/google.svg"
                   alt="google"
                   width={30}
                   height={30}
@@ -401,7 +401,7 @@ const Footer = () => {
                 className="flex flex-col items-center gap-1"
               >
                 <Image
-                  src="android.svg"
+                  src="/android.svg"
                   alt="android"
                   width={30}
                   height={30}
@@ -414,7 +414,7 @@ const Footer = () => {
             </div>
             <div className="my-auto pt-[60px]">
               <Image
-                src="qrcodetwo.svg"
+                src="/qrcodetwo.svg"
                 alt="qrcodetwo"
                 width={60}
                 height={61}
@@ -494,8 +494,8 @@ const Footer = () => {
                 <Image
                   src={
                     hoveredIcon === "facebook"
-                      ? "facebookHover.svg"
-                      : "facebook.svg"
+                      ? "/facebookHover.svg"
+                      : "/facebook.svg"
                   }
                   alt="facebook"
                   width={24}
@@ -511,8 +511,8 @@ const Footer = () => {
                 <Image
                   src={
                     hoveredIcon === "instagram"
-                      ? "instagramHover.svg"
-                      : "instagram.svg"
+                      ? "/instagramHover.svg"
+                      : "/instagram.svg"
                   }
                   alt="instagram"
                   width={24}
@@ -526,7 +526,7 @@ const Footer = () => {
             <li>
               <Link href="/" target="_blank" rel="noopener noreferrer">
                 <Image
-                  src={hoveredIcon === "in" ? "inHover.svg" : "in.svg"}
+                  src={hoveredIcon === "in" ? "/inHover.svg" : "/in.svg"}
                   alt="in"
                   width={24}
                   height={24}
@@ -541,8 +541,8 @@ const Footer = () => {
                 <Image
                   src={
                     hoveredIcon === "telegram"
-                      ? "telegramHover.svg"
-                      : "telegram.svg"
+                      ? "/telegramHover.svg"
+                      : "/telegram.svg"
                   }
                   alt="telegram"
                   width={24}
@@ -556,7 +556,7 @@ const Footer = () => {
             <li>
               <Link href="/" target="_blank" rel="noopener noreferrer">
                 <Image
-                  src={hoveredIcon === "unix" ? "unixHover.svg" : "unix.svg"}
+                  src={hoveredIcon === "unix" ? "/unixHover.svg" : "/unix.svg"}
                   alt="unix"
                   width={24}
                   height={24}

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+// Компонент кнопки "Sign Up"
 const SignUpButton = () => (
     <Link href="/sign-up">
         <button
@@ -10,29 +11,30 @@ const SignUpButton = () => (
             <span className="text-[16px] font-semibold leading-[19.2px] text-white">
                 Sign up now
             </span>
-            <Image src="/arrowWhite.svg" alt="arrow" width={34} height={3}/>
+            <Image src="/arrowWhite.svg" alt="arrow" width={34} height={3} />
         </button>
     </Link>
 );
 
-const TradeForexSection = () => {
+// Универсальный компонент для секции с заголовком, текстом и изображением
+const TradeSection = ({ title, description, imgSrc, imgAlt }) => {
     return (
         <section className="relative">
             <div className="max-w-screen-xl mx-auto py-11 flex flex-row gap-16">
                 <div className="flex flex-col mt-11 mb-16">
+
                     <h1 className="text-[54px] font-semibold leading-[64.8px] text-customBlueThree pb-4 max-w-[600px]">
-                        Trade Forex with Low & Stable Spreads
+                        {title}
                     </h1>
                     <p className="text-[20px] leading-[24px] text-customGreyEleven pb-11 max-w-[600px]">
-                        Enter the world of global Forex trading and engage with top currency pairs, benefiting from
-                        highly competitive spreads.
+                        {description}
                     </p>
                     <SignUpButton />
                 </div>
-                <Image src="/pic.png" alt="pic" width={436} height={391} className="object-cover h-[391px]"/>
+                <Image src={imgSrc} alt={imgAlt} width={436} height={391} className="object-cover h-[391px]" />
             </div>
         </section>
     );
 };
 
-export default TradeForexSection;
+export default TradeSection;

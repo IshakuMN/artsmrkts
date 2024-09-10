@@ -1,27 +1,13 @@
-"use client";
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import majors from "../utils/majors";
-import minors from "../utils/minors";
 
-const RegulationsSection = () => {
+const RegulationsSection = ({ blocks, title }) => {
     const [openIndex, setOpenIndex] = useState(null);
 
     const toggleOpen = (index) => {
         setOpenIndex(prevIndex => (prevIndex === index ? null : index));
     };
-
-    const blocks = [
-        {
-            title: 'Majors',
-            content: majors,
-        },
-        {
-            title: 'Minors',
-            content: minors,
-        },
-    ];
 
     const renderTableRows = (data) => (
         data.map((item) => (
@@ -30,7 +16,7 @@ const RegulationsSection = () => {
                     <Image src={item.img} alt={item.name} height={84} width={68} className="object-contain" />
                     <div className="flex flex-col items-start max-w-[206px] w-full">
                         <p className="text-[24px] font-semibold leading-[28.8px] text-customBlackOne">{item.name}</p>
-                        <p className="text-[16px] leading-[19.2px] text-customBlackOne">{item.subtitle}</p>
+                        <p className="text-[16px] leading-[19.2px] text-customBlackOne whitespace-nowrap">{item.subtitle}</p>
                     </div>
                 </th>
                 {[item.value1, item.value2, item.value3, item.value4, item.value5, item.value6].map((value, idx) => (
@@ -45,7 +31,7 @@ const RegulationsSection = () => {
     return (
         <section className="mx-auto flex max-w-[1240px] flex-col pt-16 gap-[85px]">
             <div className="flex flex-row gap-20">
-                <h2 className="text-[52.8px] font-medium leading-[52.8px] text-customBlackFour flex-1">Forex market spreads and swaps</h2>
+                <h2 className="text-[52.8px] font-medium leading-[52.8px] text-customBlackFour flex-1">{title}</h2>
             </div>
 
             <div className="bg-customGreyTwo rounded-[44px]">

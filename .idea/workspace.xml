@@ -28,7 +28,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "C:/Users/arsla/WebstormProjects/artsmrkts/app/forex",
+    "last_opened_file_path": "C:/Users/arsla/WebstormProjects/artsmrkts/app/markets/includes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -40,11 +40,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\markets\includes" />
+      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\markets\commodities" />
+      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\markets\forex" />
+      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\markets" />
       <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\forex" />
-      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\market-overview" />
-      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\license-regulations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\markets" />
+      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\markets\forex" />
       <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\utils" />
     </key>
   </component>
@@ -86,7 +90,7 @@
       <updated>1725615342101</updated>
       <workItem from="1725615343195" duration="19696000" />
       <workItem from="1725862241731" duration="3845000" />
-      <workItem from="1725949383097" duration="21743000" />
+      <workItem from="1725949383097" duration="34049000" />
     </task>
     <servers />
   </component>
@@ -115,6 +119,12 @@
           <url>file://$PROJECT_DIR$/app/market-news/page.jsx</url>
           <line>169</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/context/nav.js</url>
+          <line>21</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -88,17 +88,13 @@ export const Mobile1 = () => {
         className="absolute bottom-0 left-0 -z-10"
       />
       <h2 className="absolute right-64 top-12 w-96 text-4xl font-medium">
-        Mobile application Metatrader 5
+        Mobile application Metatrader 4
       </h2>
       <div className="absolute right-10 top-1/4 flex items-start gap-x-4">
         <Image src="/qrcode.png" width={180} height={180} />
         <div className="space-y-6">
           <p className="w-60 text-sm">
-            MetaTrader5 mobile is very similar to MetaTrader4 for PC by its
-            functionality. This mobile application supports most PC
-            terminal&apos;s features (all trading functions, execution modes, as
-            well as powerful technical analysis) except for the algorithmic
-            trading functions.
+            MetaTrader4 mobile is very similar to MetaTrader5 for PC by its functionality. This mobile application supports most PC terminal's features (all trading functions, execution modes, as well as powerful technical analysis) except for the algorithmic trading functions.
           </p>
           <button className="rounded-full bg-customBlueFon px-6 py-2 text-white">
             view our platform

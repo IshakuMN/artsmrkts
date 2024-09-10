@@ -29,14 +29,14 @@ const ForexMarketConditions = () => {
                                 <br/>This include all of the Fx currency pairs available</p>
                             <div className="flex flex-col">
                                 <div className="flex flex-row border-b-[1px] border-solid border-customBlueTwo justify-between">
-                                    <p className='text-[20px] font-normal leading-[24px] text-text-customBlackOne mx-8 h-[98px] flex items-center justify-center flex-1'>Instrument</p>
-                                    <p className='text-[20px] font-normal leading-[24px] text-text-customBlackOne mx-8 h-[98px] flex items-center justify-center flex-1'>Open</p>
-                                    <p className='text-[20px] font-normal leading-[24px] text-text-customBlackOne mx-8 h-[98px] flex items-center  justify-center flex-1'>Close</p>
+                                    <p className='text-[20px] font-normal leading-[24px] text-customBlackOne mx-8 h-[98px] flex items-center justify-center flex-1'>Instrument</p>
+                                    <p className='text-[20px] font-normal leading-[24px] text-customBlackOne mx-8 h-[98px] flex items-center justify-center flex-1'>Open</p>
+                                    <p className='text-[20px] font-normal leading-[24px] text-customBlackOne mx-8 h-[98px] flex items-center  justify-center flex-1'>Close</p>
                                 </div>
                                 <div className="flex flex-row justify-between">
-                                    <p className='text-[20px] font-normal leading-[24px] text-text-customBlackOne mx-8 h-[98px] flex items-center justify-center flex-1'>2344.2</p>
-                                    <p className='text-[20px] font-normal leading-[24px] text-text-customBlackOne mx-8 h-[98px] flex items-center justify-center flex-1'>2344.2</p>
-                                    <p className='text-[20px] font-normal leading-[24px] text-text-customBlackOne mx-8 h-[98px] flex items-center  justify-center flex-1'>2344.2</p>
+                                    <p className='text-[20px] font-normal leading-[24px] text-customBlackOne mx-8 h-[98px] flex items-center justify-center flex-1'>2344.2</p>
+                                    <p className='text-[20px] font-normal leading-[24px] text-customBlackOne mx-8 h-[98px] flex items-center justify-center flex-1'>2344.2</p>
+                                    <p className='text-[20px] font-normal leading-[24px] text-customBlackOne mx-8 h-[98px] flex items-center  justify-center flex-1'>2344.2</p>
                                 </div>
                             </div>
                             <p className="text-[16px] font-normal leading-[19.2px] text-customGreyEleven">All

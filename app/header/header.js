@@ -62,7 +62,7 @@ const Header = () => {
                         className="box-shadow-logo flex h-[35px] w-[35px] items-center justify-center rounded-lg border-[0.5px] border-solid border-customGreyOne bg-customWhiteOne"
                     >
                         <Image
-                            src="logo.svg"
+                            src="/logo.svg"
                             alt="artsmrkts company logo"
                             width={25}
                             height={17}
@@ -74,7 +74,7 @@ const Header = () => {
                         <div className="flex flex-row items-center">
                             <div className="mr-1 px-1">
                                 <Image
-                                    src="earth.svg"
+                                    src="/earth.svg"
                                     alt="planet earth"
                                     width={16}
                                     height={16}
@@ -85,7 +85,7 @@ const Header = () => {
                         </div>
                         <div className="flex h-2.5 w-2.5 items-center justify-center">
                             <Image
-                                src="arrow.svg"
+                                src="/arrow.svg"
                                 alt="arrow"
                                 width={7}
                                 height={4}
@@ -103,7 +103,7 @@ const Header = () => {
                             onMouseLeave={() => setIsHoveredSearchTwo(false)}
                         >
                             <Image
-                                src={isHoveredSearchTwo ? "search2.svg" : "search1.svg"} // Меняем картинку при hover
+                                src={isHoveredSearchTwo ? "/search2.svg" : "/search1.svg"} // Меняем картинку при hover
                                 alt="search"
                                 width={14}
                                 height={14}
@@ -119,7 +119,7 @@ const Header = () => {
                                 className="w-full text-[16px] capitalize leading-[19.2px] outline-0 bg-white"
                             />
                             <Image
-                                src="close.svg"
+                                src="/close.svg"
                                 alt="close"
                                 width={8}
                                 height={8}
@@ -184,10 +184,10 @@ const Header = () => {
                             handleClick={() => handleClickMenuItem("Markets & Tools")}
                             links={{
                                 Markets: [
-                                    { href: "/forex", text: "Forex" },
-                                    { href: "/commodities", text: "Commodities" },
-                                    { href: "/Stocks (soon)", text: "Stocks (soon)" },
-                                    { href: "/indices", text: "Indices" },
+                                    { href: "/markets/forex", text: "Forex" },
+                                    { href: "/markets/commodities", text: "Commodities" },
+                                    { href: "/markets/stocks", text: "Stocks (soon)" },
+                                    { href: "/markets/indices", text: "Indices" },
                                 ],
                                 Tools: [
                                     { href: "/trading-hours", text: "Trading hours" },
@@ -265,7 +265,7 @@ const Header = () => {
                         }}
                     >
                         <Image
-                            src={isHoveredSearch ? "searchOrange.svg" : "search.svg"}
+                            src={isHoveredSearch ? "/searchOrange.svg" : "/search.svg"}
                             alt="search"
                             width={14}
                             height={14}
