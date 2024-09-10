@@ -6,6 +6,7 @@ import TradingSessionsForex from "./tradingSessionsForex";
 import TradingSessions from "./tradingSessions";
 import Banner from "./banner";
 import TradingHoursTable from "./table";
+import  faqDataOne  from "../utils/faqData1";
 
 
 export default function Page() {
@@ -17,7 +18,7 @@ export default function Page() {
             <TradingSessionsForex />
             <Practice/>
             <TradeArtsmrkts/>
-            <Questions/>
+            <Questions faqData={faqDataOne} />
         </main>
     );
 }
