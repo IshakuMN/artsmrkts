@@ -28,7 +28,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "C:/Users/arsla/WebstormProjects/artsmrkts/app/open-trading-account",
+    "last_opened_file_path": "C:/Users/arsla/WebstormProjects/artsmrkts/app/introduction-broker",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -40,11 +40,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\introduction-broker" />
+      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\affilates" />
       <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\open-trading-account" />
       <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\mt4-webtrading-platform" />
       <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\mt4-iPhone" />
-      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\mt4-android" />
-      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app\mt4" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\arsla\WebstormProjects\artsmrkts\app" />
@@ -92,7 +92,7 @@
       <workItem from="1725615343195" duration="19696000" />
       <workItem from="1725862241731" duration="3845000" />
       <workItem from="1725949383097" duration="34349000" />
-      <workItem from="1726035205022" duration="29136000" />
+      <workItem from="1726035205022" duration="31042000" />
     </task>
     <servers />
   </component>

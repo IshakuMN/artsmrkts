@@ -207,6 +207,9 @@
     .bg-custom-gradient-trading-three {
         background: radial-gradient(90.58% 119.29% at 69% 100%, rgba(209, 48, 19, 0.4) 0%, rgba(255, 233, 204, 0.4) 39%, rgba(250, 250, 251, 0) 75%);
     }
+    .bg-custom-gradient-trading-four {
+        background: linear-gradient(180deg, #FAFAFB 68.46%, rgba(255, 255, 255, 0) 85.68%);
+    }
 
     .slick-slide {
         width: max-content !important;
