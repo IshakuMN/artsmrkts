@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import ButtonWithImage from "../buttonWithImage";
 
 
 export default function Page() {
@@ -18,12 +20,12 @@ export default function Page() {
                 </div>
                 <p className="text-[20px] leading-[24px] text-customBlackFour mb-6">The MetaTrader 4 trading platform,
                     developed by the trusted MetaQuotes Software Corporation, is an all-in-one solution that serves as a
-                    trader's "desktop" for operating in the Forex market. With about 80% of traders favoring this
+                    trader&apos;s "desktop" for operating in the Forex market. With about 80% of traders favoring this
                     platform, MetaTrader 4 is known for its ease of use. It allows you to manage trading accounts,
                     execute trades, analyze the market, and much more.
                 </p>
                 <div className="flex flex-col mb-8">
-                    <p className="mb-4 text-[32px] leading-[38.4px] text-customBlackFour text-medium">CMetaTrader 4
+                    <p className="mb-4 text-[32px] leading-[38.4px] text-customBlackFour text-medium">MetaTrader 4
                         Android</p>
                     <p className="text-[20px] leading-[24px] text-customBlackFour mb-6">Similar to the traditional
                         desktop terminal, the MetaTrader mobile application provides traders with access to the Forex
@@ -40,7 +42,7 @@ export default function Page() {
                         at your fingertips!
                     </p>
                 </div>
-                <div className="flex flex-row gap-11">
+                <div className="flex flex-row gap-11 mb-8">
                     <Image src="/telephone1.png" alt="telephone" width={395} height={487} className="object-contain"/>
                     <div className="flex flex-col">
                         <p className="mb-4 text-[32px] leading-[38.4px] text-customBlackFour text-medium">The Benefits
@@ -69,20 +71,49 @@ export default function Page() {
                     </div>
                 </div>
                 <div className="flex flex-col mb-8">
-                    <p className="mb-4 text-[32px] leading-[38.4px] text-customBlackFour text-medium">How to Install MetaTrader 4 for Android?</p>
-                    <p className="text-[20px] leading-[24px] text-customBlackFour">The mobile application can be downloaded in two ways: from the broker's website or from Google Play. To start trading:</p>
+                    <p className="mb-4 text-[32px] leading-[38.4px] text-customBlackFour text-medium">How to Install
+                        MetaTrader 4 for Android?</p>
+                    <p className="text-[20px] leading-[24px] text-customBlackFour">The mobile application can be
+                        downloaded in two ways: from the broker&apos;s website or from Google Play. To start
+                        trading:</p>
                     <ul className="text-[20px] leading-[24px] text-customBlackFour list-decimal ml-8 py-2">
                         <li>Open the application on your device.
                         </li>
-                        <li>Select "Log in to an existing account" (if you haven't opened a trading account yet, visit the broker's official website to complete the registration process).
+                        <li>Select "Log in to an existing account" (if you haven&apos;t opened a trading account yet,
+                            visit the broker&apos;s official website to complete the registration process).
                         </li>
                         <li>Choose a server.
                         </li>
                         <li>Enter your login (account number) and password.
                         </li>
                     </ul>
-                    <p className="text-[20px] leading-[24px] text-customBlackFour mb-6">With the MetaTrader 4 you can access the full range of trading features: manage trading positions, monitor the currency market and current quotes, and perform technical analysis directly from your mobile device.</p>
-
+                    <p className="text-[20px] leading-[24px] text-customBlackFour mb-6">With the MetaTrader 4 you can
+                        access the full range of trading features: manage trading positions, monitor the currency market
+                        and current quotes, and perform technical analysis directly from your mobile device.</p>
+                </div>
+            </section>
+            <section className="bg-white">
+                <div
+                    className="max-w-screen-xl bg-customGreyFour rounded-[44px] mx-auto bg-custom-gradient-types-three">
+                    <div className="max-w-[1046px] mx-auto flex flex-row gap-9">
+                        <div className="flex flex-row items-baseline justify-between my-[50px]">
+                            <div className="flex flex-col gap-6 items-start">
+                                <h2 className="text-[24px] leading-[28.8px] font-semibold text-customBlackFive max-w-[630px]">
+                                    If you do not have access to Google Play, <Link href="/" target="_blank"
+                                                                                    rel="noopener noreferrer"
+                                                                                    className="text-customOrangeTwo underline">download
+                                    MetaTrader 4 APK </Link> (for Android 4.0 and above).
+                                </h2>
+                            </div>
+                            <div className="flex flex-row max-w-[332px] w-full">
+                                <ButtonWithImage
+                                    text="Download for Android"
+                                    imgSrc="/android1.svg"
+                                    altText="window"
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

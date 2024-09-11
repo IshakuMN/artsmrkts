@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Banner from "./banner";
 import HeroSection from "./heroSection";
-import ButtonWithImage from "./buttonWithImage";
+import ButtonWithImage from "../buttonWithImage";
 import Link from "next/link";
 import MainSection from "./mainSection";
 

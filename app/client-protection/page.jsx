@@ -10,9 +10,9 @@ const page = () => {
         Client fund protection
       </h1>
       <div className="relative flex flex-col rounded-t-[80px] bg-customGreyFour px-[100px] py-[80px]">
-        <div className="bg-custom-gradient-bonus-two absolute h-full w-full"></div>
+        <div className="bg-custom-gradient-bonus-two absolute h-full w-full z-10"></div>
 
-        <div className="flex">
+        <div className="flex relative z-20">
           <div className="space-y-4 pt-32">
             <p className="max-w-[418px]">
               By working with Artsmrkts, clients can be confident in the
@@ -46,7 +46,7 @@ export default page;
 
 const Reliability = () => {
   return (
-    <div>
+    <div className='relative z-20'>
       <h2 className="mb-8 mt-28 text-[44px] font-medium">
         Reliability with Artsmrkts
       </h2>
@@ -118,7 +118,7 @@ const Reliability = () => {
 
 const Guarantee = () => {
   return (
-    <div className="mb-20 mt-28 flex h-[327px] space-x-10 rounded-[44px] bg-[#182654]">
+    <div className="mb-20 mt-28 flex h-[327px] space-x-10 rounded-[44px] bg-[#182654] relative z-20">
       {" "}
       <div className="-mt-8 ml-20 space-y-2">
         <div className="w-fit rounded-3xl bg-white px-6 py-10">
@@ -188,7 +188,7 @@ const SafetyMethods = () => {
   const renderCard = (index) => {
     const item = cardItems[getItemIndex(index)];
     return (
-      <div className="flex items-center border-l-4 px-4 py-4 transition-all duration-700">
+      <div className="flex items-center border-l-4 px-4 py-4 transition-all duration-700 relative z-20">
         <div className="relative flex items-center">
           {index === activeIndex && (
             <div className="absolute -left-5 h-52 w-1 flex-shrink-0 rounded-full border-l-4 border-orange-500 transition-all duration-700"></div>

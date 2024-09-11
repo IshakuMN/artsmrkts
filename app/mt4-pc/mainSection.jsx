@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ButtonWithImage from "./ButtonWithImage";
+import ButtonWithImage from "../buttonWithImage";
 import Link from "next/link";
 
 const MainSection = () => {

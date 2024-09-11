@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ButtonWithImage from "./buttonWithImage";
+import ButtonWithImage from "../buttonWithImage";
 
 
 

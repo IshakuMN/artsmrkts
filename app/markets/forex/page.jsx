@@ -2,7 +2,7 @@
 import React, {useContext, useState} from "react";
 import faqDataTwo from "../../utils/faqData2";
 import Questions from "../../trading-hours/questions";
-import MobileAppSection from "../mobileAppSection";
+import MobileAppSection from "../../mobileAppSection";
 import TradeSection from "../tradeSection";
 import ForexMarketConditions from "./forexMarketConditions";
 import RegulationsSection from "../RegulationsSection";
