@@ -270,7 +270,7 @@ const TradingHoursTable = () => {
                     <p className="text-[20px] font-normal leading-[24px] text-customBlackOne">
                         JustMarkets is constantly improving its services and expanding the range of trading
                         instruments, so only the main tools are indicated above, and the list may be not full. If
-                        you haven't found the necessary instrument in the table above, you may always check its
+                        you have&apos;t found the necessary instrument in the table above, you may always check its
                         working time in the MT4/MT5 trading terminal → Specification of the needed trading
                         instrument.
 
@@ -278,7 +278,6 @@ const TradingHoursTable = () => {
                     <p className="text-[20px] font-normal leading-[24px] text-customBlackOne">
                         Please, pay attention, that quotes and trading may be unavailable during server maintenance
                         hours.
-
                     </p>
                     <p className="text-[20px] font-normal leading-[24px] text-customBlackOne">
                         Also, please note that the working hours of a trading instrument may change due to holidays

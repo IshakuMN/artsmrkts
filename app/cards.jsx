@@ -20,7 +20,7 @@ const Cards = () => {
       <div className="flex justify-between">
         <TransparentPricing />
         <div className="flex items-center">
-          <Image src="/ethereums.png" width={73} height={123} />
+          <Image src="/ethereums.png" width={73} height={123} alt="ethereums"/>
         </div>
         <TightSpeed />
 

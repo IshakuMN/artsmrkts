@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 const TradeTable = () => {
@@ -47,7 +48,7 @@ const TradeTable = () => {
             <tr key={index} className="hover:bg-blue-100">
               <td className="rounded-l-[34px]">
                 <div className="my-2 flex items-center space-x-4 px-4 py-1">
-                  <img src={price.img} alt={price.name} className="h-16 w-20" />
+                  <Image src={price.img} alt={price.name} height={64} width={80} className="h-16 w-20" />
                   <div>
                     <h3 className="font-bold">{price.name}</h3>
                     <p className="text-gray-500">{price.description}</p>

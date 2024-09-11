@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Inter, Zen_Kaku_Gothic_New } from "next/font/google";
 import { useEffect, useState, useRef } from "react";
-import dynamic from "next/dynamic";
 import LottiePlayerHtml from "./lottiePlayerHtml";
 import LottiePlayerHtmlRed from "./lottiePlayerHtmlRed";
 
@@ -97,6 +96,7 @@ const Banner = () => {
               width={700}
               height={2500}
               className="absolute bottom-0 left-0"
+              alt="redMask"
             />{" "}
             <LottiePlayerHtmlRed />
           </div>
@@ -134,6 +134,7 @@ const Banner = () => {
               width={700}
               height={2500}
               className="absolute bottom-0 left-0"
+              alt="greenMask"
             />
             <LottiePlayerHtml />
           </div>

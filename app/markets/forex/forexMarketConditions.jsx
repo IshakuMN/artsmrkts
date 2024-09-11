@@ -51,7 +51,7 @@ const ForexMarketConditions = () => {
                         </div>
                         <p className="text-[16px] font-normal leading-[19.2px] text-customGreyEleven">The spreads in
                             the forex market often change. The numbers shared above are averages from previous
-                            trading days. But don't worry! You can always see actual spreads right in the trading
+                            trading days. But don&apos;t worry! You can always see actual spreads right in the trading
                             terminal. Spreads can increase during periods of low liquidity or high volatility. It
                             all depends on the current market situation.
                             If you are interested in a specific spread for any trading instrument to be customized,

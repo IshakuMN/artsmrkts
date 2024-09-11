@@ -1,4 +1,4 @@
-import WhyChooseArtsmrkts from "../whyChooseArtsmrkts";
+import WhyChooseArtsmrkts from "../../whyChooseArtsmrkts";
 
 const forexFeatures = [
     {

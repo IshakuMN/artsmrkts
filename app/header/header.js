@@ -233,7 +233,10 @@ const Header = () => {
                                     { href: "/open-trading-account", text: "Open Trading Account" },
                                 ],
                                 "Treading Platforms": [
-                                    { href: "/mt4", text: "MT4" },
+                                    { href: "/mt4-pc", text: "MT4 for PC" },
+                                    { href: "/mt4-android", text: "MT4 for Android" },
+                                    { href: "/mt4-iPhone", text: "MT4 for iPhone" },
+                                    { href: "/mt4-webtrading-platform", text: "MT4 for WebTrading Platform" },
                                 ],
                                 "Copytrading (soon)": [],
                             }}

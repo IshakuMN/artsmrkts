@@ -15,7 +15,7 @@ const BannerBonus = ({
             <div className="bg-custom-gradient-bonus absolute z-10 h-full w-full rounded-b-[70px]"></div>
             <div className="flex flex-row gap-10 relative z-20 mx-auto py-6 max-w-[1440px]">
                 {children}
-                <Image src={imageSrc} alt={imageAlt} width={666} height={400} className="object-contain h-[400px]"/>
+                <Image src={imageSrc} alt={imageAlt} width={666} height={400} className="object-contain h-[400px] scale-125"/>
                 <div className="relative mb-[102px] flex flex-col pt-[76px] gap-8 max-w-[583px]">
                     <h1 className="text-[44px] font-medium leading-[52.8px] text-customBlueTwo">
                         {title} <span className="text-customOrangeTwo">{highlightText}</span>
@@ -28,7 +28,7 @@ const BannerBonus = ({
                             <span className="text-[20px] font-semibold leading-[24px] text-white">
                                 {buttonText}
                             </span>
-                            <Image src="/arrowWhite.svg" alt="arrow" width={34} height={3}/>
+                            <Image src="/arrowWhite.svg" alt="arrow" width={34} height={3} className="object-contain"/>
                         </button>
                     </Link>
                 </div>

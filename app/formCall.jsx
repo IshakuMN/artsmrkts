@@ -9,8 +9,6 @@ import {
   validatePhone,
   validateLanguage,
 } from "./utils/validators";
-import { send } from "process";
-import { sendEmail } from "./api/send-email/route";
 
 const FormCall = ({ setFormSubmitted, setIsActive }) => {
   const languages = ["Eng", "Ru", "Ar"];
