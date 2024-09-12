@@ -9,8 +9,6 @@ import {
   validatePhone,
   validateLanguage,
 } from "./utils/validators";
-import { send } from "process";
-import { sendEmail } from "./api/send-email/route";
 
 const FormCall = ({ setFormSubmitted, setIsActive }) => {
   const languages = ["Eng", "Ru", "Ar"];
@@ -87,25 +85,6 @@ const FormCall = ({ setFormSubmitted, setIsActive }) => {
     setLanguageError(validateLanguage(inputValueLanguage));
 
     if (!nameError && !emailError && !phoneError && !languageError) {
-      try {
-        const response = await fetch("/api/sendMessage", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
-        console.log(formData, "formData");
-        if (response.ok) {
-          // Handle success (e.g., display a success message)
-        } else {
-          // Handle error (e.g., display an error message)
-        }
-      } catch (error) {
-        console.error("An error occurred:", error);
-      }
-
-      // sendEmail();
 
       alert("Form submitted successfully!");
       setInputValueName("");

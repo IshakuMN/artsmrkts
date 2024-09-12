@@ -10,7 +10,6 @@ import {
   validateMessage,
 } from "./utils/validators";
 
-// import { sendEmail } from "./api/send-email/route";
 
 const ContactForm = () => {
   const [inputValueName, setInputValueName] = useState("");

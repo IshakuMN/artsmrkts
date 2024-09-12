@@ -21,19 +21,19 @@ const MarketTrends = () => {
       id: "stock",
       imageSrc: "stock.svg",
       title: "US Stock Soar on Strong Jobs Data and Tech Rally",
-      description: "The US stock market kicked off the second half of t...",
+      description: "The US stock market kicked off the second half of",
     },
     {
       id: "gold",
       imageSrc: "gold.svg",
-      title: "Bitcoin's Struggle:",
-      description: "Is a Crypto Winter Looming?",
+      title: "Best time to Trade Gold",
+      description: "Srategies and Insights for 2024",
     },
     {
       id: "money",
       imageSrc: "money.svg",
       title: "US Stock Soar on Strong Jobs Data and Tech Rally",
-      description: "The US stock market kicked off the second half of t...",
+      description: "The US stock market kicked off the second half of.",
     },
   ];
 

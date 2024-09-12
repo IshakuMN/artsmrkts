@@ -1,5 +1,8 @@
 "use client";
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import AccountTypes from "@/app/accountTypes";
 
 const TradeTable = () => {
   const [prices, setPrices] = useState([]);
@@ -25,12 +28,14 @@ const TradeTable = () => {
       <div className="mb-10 flex items-center justify-between">
         <h1 className="text-[44px] font-medium">Stable and reliable pricing</h1>
         <div className="flex space-x-2">
-          <button className="w-[225px] rounded-full border py-2 font-semibold hover:bg-[#F6F6F6] active:bg-[#E8E8E9]">
-            Register
-          </button>
+
+          <Link href="/sign-un"><button className="w-[225px] rounded-full border py-2 font-semibold hover:bg-[#F6F6F6] active:bg-[#E8E8E9]">
+            Sign up
+          </button></Link>
+          <Link href="/try-free-demo">
           <button className="w-[225px] rounded-full bg-customBlueFon py-2 font-semibold text-white hover:bg-[#182654] active:bg-[#001240]">
             Try free demo
-          </button>
+          </button></Link>
         </div>
       </div>
       <table className="w-full">
@@ -47,7 +52,7 @@ const TradeTable = () => {
             <tr key={index} className="hover:bg-blue-100">
               <td className="rounded-l-[34px]">
                 <div className="my-2 flex items-center space-x-4 px-4 py-1">
-                  <img src={price.img} alt={price.name} className="h-16 w-20" />
+                  <Image src={price.img} alt={price.name} height={64} width={80} className="h-16 w-20" />
                   <div>
                     <h3 className="font-bold">{price.name}</h3>
                     <p className="text-gray-500">{price.description}</p>

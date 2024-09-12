@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { Inter, Zen_Kaku_Gothic_New } from "next/font/google";
 import { useEffect, useState, useRef } from "react";
-import dynamic from "next/dynamic";
 import LottiePlayerHtml from "./lottiePlayerHtml";
 import LottiePlayerHtmlRed from "./lottiePlayerHtmlRed";
+import StatisticsSection from "@/app/statisticsSection";
 
 const inter = Inter({ subsets: ["latin"] });
 const zen_kaku_gothic_new = Zen_Kaku_Gothic_New({
@@ -47,30 +47,29 @@ const Banner = () => {
       <div className="mx-auto flex max-w-[1240px] flex-row gap-[123px]">
         <div className="relative z-20 mb-40 flex flex-1 flex-col pt-24">
           <h1 className="text-[54px] font-semibold leading-[64.8px] text-customBlueThree">
-            Reach your trading potential
+            Discover your personal trading potential
           </h1>
           <p className="mt-5 text-[18px] leading-[21.6px] text-customBlackOne">
-            Trade with the global recognized broker and get to unmatched trading
-            conditions on the market
+            Trade with a globally trusted broker, and have an exclusive trading experience
           </p>
           <div className="mt-11 flex flex-row gap-2">
-            <Link href="/">
+            <Link href="/try-free-demo">
               <button
                 type="button"
-                className="flex cursor-pointer items-center justify-center rounded-[44px] bg-white px-[51.75px] py-3 transition-colors duration-300 ease-in-out hover:bg-customGreyTwo active:bg-customGrey"
+                className="flex cursor-pointer items-center justify-center rounded-[44px] bg-white px-[51.75px] py-3 border-[1px] border-customGrey border-solid transition-colors duration-300 ease-in-out hover:bg-customGreyTwo active:bg-customGrey"
               >
                 <span className="text-[20px] font-semibold leading-[24px] text-customBlue">
-                  Try demo
+                  Try free demo
                 </span>
               </button>
             </Link>
-            <Link href="/register">
+            <Link href="/sign-up">
               <button
                 type="button"
                 className="flex cursor-pointer items-center justify-center rounded-[44px] bg-customOrangeTwo px-[51.75px] py-3 transition-colors duration-300 ease-in-out hover:bg-customOrange active:bg-customOrangeThree"
               >
                 <span className="text-[20px] font-semibold leading-[24px] text-white">
-                  Register now
+                 Sign up now
                 </span>
               </button>
             </Link>
@@ -92,12 +91,13 @@ const Banner = () => {
               className="object-contain"
             />
           </div>
-          <div className="animate-slide-down relative z-50 my-auto flex flex-col items-center gap-2 pt-20">
+          <div className="animate-slide-down relative z-20 my-auto flex flex-col items-center gap-2 pt-20">
             <Image
               src="/redMask.svg"
               width={700}
               height={2500}
               className="absolute bottom-0 left-0"
+              alt="redMask"
             />{" "}
             <LottiePlayerHtmlRed />
           </div>
@@ -129,12 +129,13 @@ const Banner = () => {
               className="object-contain"
             />
           </div>
-          <div className="animate-slide-down relative z-50 my-auto flex flex-col items-center gap-2 pb-16">
+          <div className="animate-slide-down relative z-20 my-auto flex flex-col items-center gap-2 pb-16">
             <Image
               src="/greenMask.svg"
               width={700}
               height={2500}
               className="absolute bottom-0 left-0"
+              alt="greenMask"
             />
             <LottiePlayerHtml />
           </div>
@@ -153,64 +154,7 @@ const Banner = () => {
             Based on 2,446 reviews
           </p>
         </div>
-        <div className="flex flex-1 flex-row gap-1 pt-[13px]">
-          <div className="relative flex flex-1 flex-row items-center gap-4 rounded-lg px-4 py-1">
-            <div className="absolute left-0 top-0 z-10 h-full w-full rounded-lg bg-customGreyFour opacity-40"></div>
-            <span
-              className={`relative z-20 text-[32px] font-semibold leading-[38.4px] text-customBlue ${inter.className}`}
-            >
-              1+
-            </span>
-
-            <p className="relative z-20 text-[16px] leading-[19.2px] text-customBlackThree">
-              Million
-              <br />
-              traders
-            </p>
-          </div>
-          <div className="relative flex flex-1 flex-row items-center gap-4 rounded-lg px-[9px] py-1">
-            <div className="absolute left-0 top-0 z-10 h-full w-full rounded-lg bg-customGreyFour opacity-40"></div>
-            <Image
-              src="licenses.svg"
-              alt="licenses"
-              width={20}
-              height={26.25}
-              className="relative z-20 object-contain"
-            />
-            <p className="relative z-20 text-[16px] leading-[19.2px] text-customBlackThree">
-              Multiple regulatory <br />
-              licenses
-            </p>
-          </div>
-          <div className="relative flex flex-1 flex-row items-center gap-4 rounded-lg px-4 py-1">
-            <div className="absolute left-0 top-0 z-10 h-full w-full rounded-lg bg-customGreyFour opacity-40"></div>
-            <span
-              className={`relative z-20 text-[32px] font-semibold leading-[38.4px] text-customBlue ${inter.className}`}
-            >
-              24/7
-            </span>
-            <p className="relative z-20 text-[16px] leading-[19.2px] text-customBlackThree">
-              Customer
-              <br />
-              support
-            </p>
-          </div>
-          <div className="relative flex flex-1 flex-row items-center gap-4 rounded-lg px-[9px] py-1">
-            <div className="absolute left-0 top-0 z-10 h-full w-full rounded-lg bg-customGreyFour opacity-40"></div>
-            <Image
-              src="protection.svg"
-              alt="protection"
-              width={20}
-              height={25}
-              className="relative z-20 object-contain"
-            />
-            <p className="relative z-20 text-[16px] leading-[19.2px] text-customBlackThree">
-              Client found
-              <br />
-              protection
-            </p>
-          </div>
-        </div>
+       <StatisticsSection />
       </div>
     </section>
   );

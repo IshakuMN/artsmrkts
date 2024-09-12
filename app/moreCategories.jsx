@@ -7,7 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 import {useEffect, useState} from "react";
 
 
-
 const PrevArrow = ({ onClick, currentSlide }) => (
     <button
         onClick={onClick}

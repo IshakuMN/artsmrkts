@@ -9,28 +9,24 @@ const Footer = () => {
     <footer className="bg-custom-gradient-two">
       <div className="mx-auto max-w-[1240px] pb-[91px] pt-[100px]">
         <div className="mb-16 flex flex-row gap-2.5">
-          <Link
-            href="/"
-            rel="noopener noreferrer"
-            className="box-shadow-logo-footer flex h-[61px] w-[61px] items-center justify-center rounded-lg border-[0.77px] border-solid border-customGreyOne bg-customWhiteOne"
-          >
+          <div className="flex h-[61px] w-[61px] items-center justify-center">
             <Image
-              src="logo.svg"
+              src="/logo.svg"
               alt="logo"
               width={41}
               height={28}
               className="object-contain"
             />
-          </Link>
+          </div>
 
-          <p className="w-40 text-[20px] font-semibold leading-[24px] text-customBlackOne">
+          <p className="w-40 text-[20px] font-bold leading-[24px] text-customBlackOne">
             The best forex broker
           </p>
         </div>
         <div className="mb-[101px]">
           <div className="flex flex-row gap-11">
-            <div className="flex flex-1 flex-col justify-between gap-8">
-              <div className="flex flex-row gap-4">
+            <div className="flex flex-1 flex-col justify-between gap-2">
+              <div className="flex h-[243px] flex-row gap-4">
                 <div className="flex w-[111px] flex-col">
                   <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
                     Company
@@ -40,47 +36,74 @@ const Footer = () => {
                 <ul className="flex flex-col gap-2">
                   <li>
                     <Link
-                      href="/"
+                      href="/why-artsmrkts"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Trading account types
+                      Why Artsmrkts
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/license-regulations"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Deposit and withdrawal
+                      License & Regulations
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/clients-protection"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      VPS hosting
+                      Clients fund protection
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/contact-us"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Contact specifications
+                      Contact us
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/welcome-bonus"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Trading hours
+                      Welcome Bonus
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/re-deposit-bonus"
+                      rel="noopener noreferrer"
+                      className="text-[14px] leading-[16.8px] text-customBlackOne"
+                    >
+                      Re-deposit bonus
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/refer-bonus"
+                      rel="noopener noreferrer"
+                      className="text-[14px] leading-[16.8px] text-customBlackOne"
+                    >
+                      Referral Bonus
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/career"
+                      rel="noopener noreferrer"
+                      className="text-[14px] leading-[16.8px] text-customBlackOne"
+                    >
+                      Career in Artsmrkts
                     </Link>
                   </li>
                 </ul>
@@ -88,63 +111,6 @@ const Footer = () => {
               <div className="flex flex-row gap-4">
                 <div className="flex w-[111px] flex-col">
                   <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
-                    Markets & Tools
-                  </p>
-                  <div className="h-[1px] w-full bg-customBlueFour"></div>
-                </div>
-                <ul className="flex flex-col gap-2">
-                  <li>
-                    <Link
-                      href="/"
-                      rel="noopener noreferrer"
-                      className="text-[14px] leading-[16.8px] text-customBlackOne"
-                    >
-                      Trading account types
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      rel="noopener noreferrer"
-                      className="text-[14px] leading-[16.8px] text-customBlackOne"
-                    >
-                      Deposit and withdrawal
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      rel="noopener noreferrer"
-                      className="text-[14px] leading-[16.8px] text-customBlackOne"
-                    >
-                      VPS hosting
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      rel="noopener noreferrer"
-                      className="text-[14px] leading-[16.8px] text-customBlackOne"
-                    >
-                      Contact specifications
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      rel="noopener noreferrer"
-                      className="text-[14px] leading-[16.8px] text-customBlackOne"
-                    >
-                      Trading hours
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="flex flex-1 flex-col justify-between gap-8">
-              <div className="flex flex-row gap-4">
-                <div className="flex w-[111px] flex-col">
-                  <p className="w-[111px] pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
                     Trading
                   </p>
                   <div className="h-[1px] w-full bg-customBlueFour"></div>
@@ -152,56 +118,113 @@ const Footer = () => {
                 <ul className="flex flex-col gap-2">
                   <li>
                     <Link
-                      href="/"
+                      href="/trading-account-types"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Trading account types
+                      Trading Account Types
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/open-trading-account"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Deposit and withdrawal
+                      Open Trading Account
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/mt4"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      VPS hosting
+                      MT4
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="flex flex-1 flex-col gap-2">
+              <div className="flex h-[243px] flex-row gap-4">
+                <div className="flex w-[111px] flex-col">
+                  <p className="w-[111px] pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
+                    Markets & Tools
+                  </p>
+                  <div className="h-[1px] w-full bg-customBlueFour"></div>
+                </div>
+                <ul className="flex flex-col gap-2">
+                  <li>
+                    <Link
+                      href="/forex"
+                      rel="noopener noreferrer"
+                      className="text-[14px] leading-[16.8px] text-customBlackOne"
+                    >
+                      Forex
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/commodities"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Contact specifications
+                      Commodities
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/stocks"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Margin requirements & Leverage rules
+                      Stocks (soon)
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/indices"
+                      rel="noopener noreferrer"
+                      className="text-[14px] leading-[16.8px] text-customBlackOne"
+                    >
+                      Indices
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/trading-hours"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
                       Trading hours
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/calculator"
+                      rel="noopener noreferrer"
+                      className="text-[14px] leading-[16.8px] text-customBlackOne"
+                    >
+                      Calculator
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/markets-news"
+                      rel="noopener noreferrer"
+                      className="text-[14px] leading-[16.8px] text-customBlackOne"
+                    >
+                      Market News
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/economic-calendar"
+                      rel="noopener noreferrer"
+                      className="text-[14px] leading-[16.8px] text-customBlackOne"
+                    >
+                      Economic Calendar
                     </Link>
                   </li>
                 </ul>
@@ -209,174 +232,176 @@ const Footer = () => {
               <div className="flex flex-row gap-4">
                 <div className="flex w-[111px] flex-col">
                   <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
-                    Markets
+                    Partnership
                   </p>
                   <div className="h-[1px] w-full bg-customBlueFour"></div>
                 </div>
                 <ul className="flex flex-col gap-2">
                   <li>
                     <Link
-                      href="/"
+                      href="/introduction-broker"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Trading account types
+                      Introduction broker (IB)
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/affilates"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Deposit and withdrawal
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      rel="noopener noreferrer"
-                      className="text-[14px] leading-[16.8px] text-customBlackOne"
-                    >
-                      Contact specifications
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      rel="noopener noreferrer"
-                      className="text-[14px] leading-[16.8px] text-customBlackOne"
-                    >
-                      Trading hours
+                      Affilates
                     </Link>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="flex flex-1 flex-col justify-between">
-              <div className="flex flex-row gap-4">
+              <div className="flex h-[243px] flex-row gap-4">
                 <div className="flex w-[111px] flex-col">
                   <p className="w-[111px] pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
-                    Platform
+                    Education
                   </p>
                   <div className="h-[1px] w-full bg-customBlueFour"></div>
                 </div>
                 <ul className="flex flex-col gap-2">
                   <li>
                     <Link
-                      href="/"
+                      href="/basics-trading"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Trading account types
+                      Basics of Trading
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/technical-analysis"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Deposit and withdrawal
+                      Technical analysis
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/articles"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      VPS hosting
+                      Articles
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/forex-glossary"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Contact specifications
+                      Forex Glossary
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/market-news"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Margin requirements & Leverage rules
+                      Market overview
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/daily-forecast"
                       rel="noopener noreferrer"
                       className="text-[14px] leading-[16.8px] text-customBlackOne"
                     >
-                      Trading hours
+                      Daily Forecast
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/webinar"
+                      rel="noopener noreferrer"
+                      className="text-[14px] leading-[16.8px] text-customBlackOne"
+                    >
+                      Webinar
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/educational-videos"
+                      rel="noopener noreferrer"
+                      className="text-[14px] leading-[16.8px] text-customBlackOne"
+                    >
+                      Educational Videos
                     </Link>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="flex flex-col gap-11">
-              <Link
-                href="/"
-                rel="noopener noreferrer"
-                className="flex flex-col items-center gap-1"
-              >
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4">
+                <Link
+                  href="/"
+                  rel="noopener noreferrer"
+                  className="flex flex-row items-center gap-4 rounded-lg border-[1px] border-solid border-customGreyFifteen px-2 py-3"
+                >
+                  <Image
+                    src="/apple.svg"
+                    alt="apple"
+                    width={30}
+                    height={30}
+                    className="object-contain"
+                  />
+                  <span className="text-[16px] leading-[19.2px] text-customBlackFour">
+                    Apple Store
+                  </span>
+                </Link>
+                <Link
+                  href="/"
+                  rel="noopener noreferrer"
+                  className="flex flex-row items-center gap-4 rounded-lg border-[1px] border-solid border-customGreyFifteen px-2 py-3"
+                >
+                  <Image
+                    src="/google.svg"
+                    alt="google"
+                    width={30}
+                    height={30}
+                    className="object-contain"
+                  />
+                  <span className="text-[16px] leading-[19.2px] text-customBlackFour">
+                    Google Play
+                  </span>
+                </Link>
+                <Link
+                  href="/"
+                  rel="noopener noreferrer"
+                  className="flex flex-row items-center gap-4 rounded-lg border-[1px] border-solid border-customGreyFifteen px-2 py-3"
+                >
+                  <Image
+                    src="/android.svg"
+                    alt="android"
+                    width={30}
+                    height={30}
+                    className="object-contain"
+                  />
+                  <span className="whitespace-nowrap text-[16px] leading-[19.2px] text-customBlackFour">
+                    Android APK
+                  </span>
+                </Link>
+              </div>
+              <div className="">
                 <Image
-                  src="apple.svg"
-                  alt="apple"
-                  width={30}
-                  height={30}
+                  src="/qrcodetwo.png"
+                  alt="qrcodetwo"
+                  width={153}
+                  height={155}
                   className="object-contain"
                 />
-                <span className="text-[16px] leading-[19.2px] text-customBlackFour">
-                  Apple Store
-                </span>
-              </Link>
-              <Link
-                href="/"
-                rel="noopener noreferrer"
-                className="flex flex-col items-center gap-1"
-              >
-                <Image
-                  src="google.svg"
-                  alt="google"
-                  width={30}
-                  height={30}
-                  className="object-contain"
-                />
-                <span className="text-[16px] leading-[19.2px] text-customBlackFour">
-                  Google Play
-                </span>
-              </Link>
-              <Link
-                href="/"
-                rel="noopener noreferrer"
-                className="flex flex-col items-center gap-1"
-              >
-                <Image
-                  src="android.svg"
-                  alt="android"
-                  width={30}
-                  height={30}
-                  className="object-contain"
-                />
-                <span className="whitespace-nowrap text-[16px] leading-[19.2px] text-customBlackFour">
-                  Android APK
-                </span>
-              </Link>
-            </div>
-            <div className="my-auto pt-[60px]">
-              <Image
-                src="qrcodetwo.svg"
-                alt="qrcodetwo"
-                width={60}
-                height={61}
-                className="object-contain"
-              />
+              </div>
             </div>
           </div>
         </div>
@@ -387,28 +412,18 @@ const Footer = () => {
             </p>
             <div className="h-[1px] w-full bg-customBlueFour"></div>
           </div>
-          <ul className="flex flex-col gap-2">
+          <ul className="flex flex-col">
             <li className="text-[12px] leading-[14.4px] text-customBlackOne">
-              Just Global Markets Ltd., registration number 8427198-1, address:
-              Office 10, Floor 2, Vairam Building, Providence Industrial Estate,
-              Providence, Mahe, Seychelles, a company regulated by the
-              Seychelles Financial Services Authority (FSA) under a Securities
-              Dealer License number SD088.
+              Artsmrkts Ltd, registration number 2023-00238, address: Syrakouson
+              9, Office 106, 3077, Limassol, Cyprus, is the Saint Vincent And
+              the Grenadies company, which provides certain content and operates
+              the business including in terms of processing payment
+              transactions.
             </li>
             <li className="text-[12px] leading-[14.4px] text-customBlackOne">
-              Just Global Markets (MU) Limited, registration number 194590 GBC,
-              address: The Cyberati Lounge, C/o Credentia International
-              Management Ltd, Ground Floor, The Catalyst, Silicon Avenue, 40
-              Cybercity, 72201 Ebène, Republic of Mauritius, an Investment
-              Dealer (Full Service Dealer, Excluding Underwriting) regulated by
-              the Financial Services Commission (FSC) in Mauritius under a
-              License number GB22200881.
-            </li>
-            <li className="text-[12px] leading-[14.4px] text-customBlackOne">
-              GMFT Services Ltd, registration number HE 424491, address:
-              Syrakouson 9, Office 106, 3077, Limassol, Cyprus, is the EU
-              merchant company, which provides certain content and operates the
-              business including in terms of processing payment transactions.
+              Artsmrkts Ltd Registered Office address: Fortgate Offshore
+              Investment and Legal Services Ltd. Ground Floor, The Sotheby
+              Building, Rodney Village, Rodney Bay, Gros-Islet, Saint Lucia.
             </li>
             <li className="text-[12px] leading-[14.4px] text-customBlackOne">
               Risk Warning: CFDs are complex instruments and come with a high
@@ -422,17 +437,9 @@ const Footer = () => {
               with margin trading, pay attention to our Risk Disclosure.
             </li>
             <li className="text-[12px] leading-[14.4px] text-customBlackOne">
-              Restricted Jurisdictions: JustMarkets does not offer and does not
-              provide services to residents and citizens of certain
-              jurisdictions, including Australia, Canada, the EU and EEA, Japan,
-              the United Kingdom, the United States of America, and countries
-              sanctioned by the EU.
-            </li>
-            <li className="text-[12px] leading-[14.4px] text-customBlackOne">
-              ¹At JustMarkets, most of withdrawals are processed instantly
-              (under 1 minute). Once your funds leave our custody, it&apos;s up
-              to your chosen payment provider to process the funds and credit
-              your account.
+              At Artsmrkts, most of withdrawals are processed instantly (under 1
+              minute). Once your funds leave our custody, it's up to your chosen
+              payment provider to process the funds and credit your account.
             </li>
           </ul>
         </div>
@@ -442,6 +449,7 @@ const Footer = () => {
               <Link
                 href="/"
                 rel="noopener noreferrer"
+                target="_blank"
                 className="text-[14px] leading-[16.8px] text-customBlackOne"
               >
                 Risk Disclosure
@@ -461,6 +469,7 @@ const Footer = () => {
               <Link
                 href="/"
                 rel="noopener noreferrer"
+                target="_blank"
                 className="text-[14px] leading-[16.8px] text-customBlackOne"
               >
                 AML Policy
@@ -470,6 +479,7 @@ const Footer = () => {
               <Link
                 href="/"
                 rel="noopener noreferrer"
+                target="_blank"
                 className="text-[14px] leading-[16.8px] text-customBlackOne"
               >
                 Sitemap
@@ -482,8 +492,8 @@ const Footer = () => {
                 <Image
                   src={
                     hoveredIcon === "facebook"
-                      ? "facebookHover.svg"
-                      : "facebook.svg"
+                      ? "/facebookHover.svg"
+                      : "/facebook.svg"
                   }
                   alt="facebook"
                   width={24}
@@ -495,12 +505,16 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://instagram.com/artsmrkts/?igsh=MXN2dndzaWRnNjQzNA%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src={
                     hoveredIcon === "instagram"
-                      ? "instagramHover.svg"
-                      : "instagram.svg"
+                      ? "/instagramHover.svg"
+                      : "/instagram.svg"
                   }
                   alt="instagram"
                   width={24}
@@ -512,9 +526,13 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://www.linkedin.com/company/artsmrkts"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
-                  src={hoveredIcon === "in" ? "inHover.svg" : "in.svg"}
+                  src={hoveredIcon === "in" ? "/inHover.svg" : "/in.svg"}
                   alt="in"
                   width={24}
                   height={24}
@@ -525,12 +543,16 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://t.me/artsmrkts"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src={
                     hoveredIcon === "telegram"
-                      ? "telegramHover.svg"
-                      : "telegram.svg"
+                      ? "/telegramHover.svg"
+                      : "/telegram.svg"
                   }
                   alt="telegram"
                   width={24}
@@ -544,7 +566,7 @@ const Footer = () => {
             <li>
               <Link href="/" target="_blank" rel="noopener noreferrer">
                 <Image
-                  src={hoveredIcon === "unix" ? "unixHover.svg" : "unix.svg"}
+                  src={hoveredIcon === "unix" ? "/unixHover.svg" : "/unix.svg"}
                   alt="unix"
                   width={24}
                   height={24}
