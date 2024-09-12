@@ -449,7 +449,8 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="/"
+                href="https://drive.google.com/file/d/1SaRFtM6Ju29GN-TPSsuWAKxKtUuepSwg/view"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-[14px] leading-[16.8px] text-customBlackOne"
               >
