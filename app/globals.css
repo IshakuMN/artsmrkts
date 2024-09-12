@@ -221,12 +221,6 @@
         background: linear-gradient(180deg, #FAFAFB 68.46%, rgba(255, 255, 255, 0) 85.68%);
     }
 
-    .slick-slide {
-        width: max-content !important;
-        display: flex;
-     justify-content: space-between;
-    }
-
     @layer utilities {
         .bg-custom-gradient {
             background: radial-gradient(
