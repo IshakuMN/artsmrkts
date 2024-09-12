@@ -28,7 +28,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "C:/Users/arsla/WebstormProjects/artsmrkts/app/introduction-broker",
+    "last_opened_file_path": "C:/Users/arsla/WebstormProjects/landing_page",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -92,7 +92,8 @@
       <workItem from="1725615343195" duration="19696000" />
       <workItem from="1725862241731" duration="3845000" />
       <workItem from="1725949383097" duration="34349000" />
-      <workItem from="1726035205022" duration="31042000" />
+      <workItem from="1726035205022" duration="31208000" />
+      <workItem from="1726121536577" duration="11322000" />
     </task>
     <servers />
   </component>
@@ -130,14 +131,24 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app/open-trading-account/page.jsx</url>
           <line>98</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app/client-protection/page.jsx</url>
           <line>14</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/introduction-broker/page.jsx</url>
+          <line>39</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/trading-account-types/page.jsx</url>
+          <line>10</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
