@@ -48,13 +48,13 @@ const MenuItem = ({label, isActive, handleClick, links = []}) => {
                     >
                         <div className="max-w-[808px] mx-auto py-6 flex flex-row gap-7 justify-start">
                             {Object.keys(links).map((section) => (
-                                <div key={section}>
-                                    <h3 className="text-[16px] font-semibold leading-[19.2px] border-bottom px-4 py-2">{section}</h3>
+                                <div key={section} className="min-w-[174px]">
+                                    <h3 className={`text-[16px] font-semibold leading-[19.2px] border-bottom px-4 py-2 ${"Copytrading (soon)" === section ? "text-customGreyThree" : "text-customBlackFour"}`}>{section}</h3>
                                     <ul>
                                         {links[section].map((link) => (
                                             <li key={link.href}>
                                                 <Link rel="noopener noreferrer" href={link.href}   onClick={handleClick}
-                                                      className="px-4 py-1 text-[14px] leading-[16.8px] text-customBlackOne hover:text-customOrange active:text-customOrangeFive">{link.text}</Link>
+                                                      className={`px-4 py-1 text-[14px] leading-[16.8px]  ${"Stocks (soon)" === link.text ? "text-customGreyFifteen" : " hover:text-customOrange active:text-customOrangeFive text-customBlackOne"}`}>{link.text}</Link>
                                             </li>
                                         ))}
                                     </ul>

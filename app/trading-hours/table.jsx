@@ -289,7 +289,7 @@ const TradingHoursTable = () => {
                 <h2 className="text-[32px] font-medium leading-[38.4px] text-customBlackFour mb-2.5">
                     Last Articles
                 </h2>
-                <Link href="/market-news">
+                <Link href="/markets-news">
                     <div
                         className="flex flex-row gap-2.5 mb-8 group items-center"
                         onMouseDown={handleMouseDown}

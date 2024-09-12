@@ -93,7 +93,7 @@ export default function Page() {
                         {getSlidesData().map((slideData, slideIndex) => (
                             <div key={slideIndex} className="flex flex-row flex-wrap gap-6">
                                 {slideData.map((news) => (
-                                    <div key={news.id} className="flex flex-col py-11 px-8 bg-white max-w-[634px]">
+                                    <div key={news.id} className="flex flex-col py-11 px-8 bg-white max-w-[650px]">
                                         <div className="flex flex-row gap-6 pb-6">
                                             {news.isHot && (
                                                 <p className="text-[16px] leading-[19.2px] text-white py-1 px-4 bg-customOrangeSix rounded-[100px]">

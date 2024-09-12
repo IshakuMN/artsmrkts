@@ -17,7 +17,7 @@ const cardItems = [
         image: "/protection.png",
         link: "/client-protection",
     },
-    {title: "Market owerview", image: "/document2.png", link: "/market-news",},
+    {title: "Market owerview", image: "/document2.png", link: "/markets-news",},
     {title: "Forex Calculator", image: "/Calculator.png", link: "/calculator",},
     {title: "Economic calendar", image: "/calendar.png", link: "/calendar",},
 ];

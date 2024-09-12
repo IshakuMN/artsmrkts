@@ -186,7 +186,7 @@ const Header = () => {
                                 Markets: [
                                     { href: "/markets/forex", text: "Forex" },
                                     { href: "/markets/commodities", text: "Commodities" },
-                                    { href: "/markets/stocks", text: "Stocks (soon)" },
+                                    { href: "", text: "Stocks (soon)"},
                                     { href: "/markets/indices", text: "Indices" },
                                 ],
                                 Tools: [
@@ -194,7 +194,7 @@ const Header = () => {
                                     { href: "/calculator", text: "Calculator" },
                                 ],
                                 Press: [
-                                    { href: "/market-news", text: "Market News" },
+                                    { href: "/markets-news", text: "Market News" },
                                     {
                                         href: "/economic-calendar",
                                         text: "Economic Calendar",
@@ -214,7 +214,7 @@ const Header = () => {
                                     { href: "/forex-glossary", text: "Forex Glossary" },
                                 ],
                                 Analytics: [
-                                    { href: "/market-news", text: "Market overview" },
+                                    { href: "/markets-news", text: "Market overview" },
                                     { href: "/caily-forecast", text: "Daily Forecast" },
                                 ],
                                 "Live Sessions & Videos": [

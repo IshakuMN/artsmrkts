@@ -10,7 +10,7 @@ export default function Page() {
         <main className="relative">
             <section className="mx-auto flex max-w-screen-xl flex-col pt-16 pb-11 gap-11">
                 <div className="flex flex-row gap-2">
-                    <Link href="/market-news" className="flex flex-row gap-2 cursor-pointer">
+                    <Link href="/markets-news" className="flex flex-row gap-2 cursor-pointer">
                         <p className="text-[16px] leading-[19.2px] text-customGreyEleven hover:text-customOrangeThree active:text-customOrange">Market
                             overview</p>
                     </Link>

@@ -224,7 +224,7 @@
     .slick-slide {
         width: max-content !important;
         display: flex;
-        margin-right: 44px;
+     justify-content: space-between;
     }
 
     @layer utilities {
