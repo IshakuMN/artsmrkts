@@ -7,7 +7,7 @@ const Footer = () => {
     const [hoveredIcon, setHoveredIcon] = useState(null);
     return (
         <footer className="bg-custom-gradient-two">
-            <div className="mx-auto max-w-[1240px] pb-[91px] pt-[100px]">
+            <div className="min-w-80 mx-auto max-w-[1240px] pb-[91px] pt-[100px] max-sm:pt-11 max-sm:pb-10 max-sm:px-4">
                 <div className="mb-16 flex flex-row gap-2.5">
                     <div
                         className=" flex h-[61px] w-[61px] items-center justify-center"
@@ -25,11 +25,11 @@ const Footer = () => {
                         The best forex broker
                     </p>
                 </div>
-                <div className="mb-[101px]">
-                    <div className="flex flex-row gap-11">
+                <div className="mb-[101px] max-sm:mb-10">
+                    <div className="flex flex-row gap-11 max-sm:gap-5 max-sm:justify-between">
                         <div className="flex flex-1 flex-col justify-between gap-2">
-                            <div className="flex flex-row gap-4 h-[243px]">
-                                <div className="flex w-[111px] flex-col">
+                            <div className="flex flex-row gap-4 h-[243px] max-sm:flex-col max-sm:h-auto">
+                                <div className="flex w-[111px] flex-col max-sm:w-[88px]">
                                     <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
                                         Company
                                     </p>
@@ -110,8 +110,8 @@ const Footer = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="flex flex-row gap-4">
-                                <div className="flex w-[111px] flex-col">
+                            <div className="flex flex-row gap-4 max-sm:flex-col max-sm:h-auto">
+                                <div className="flex w-[111px] flex-col max-sm:w-[88px]">
                                     <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
                                         Trading
                                     </p>
@@ -147,11 +147,39 @@ const Footer = () => {
                                     </li>
                                 </ul>
                             </div>
+                            <div className="hidden flex-row gap-4 max-sm:flex-col max-sm:flex">
+                                <div className="flex w-[111px] flex-col max-sm:w-[88px]">
+                                    <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
+                                        Partnership
+                                    </p>
+                                    <div className="h-[1px] w-full bg-customBlueFour"></div>
+                                </div>
+                                <ul className="flex flex-col gap-2">
+                                    <li>
+                                        <Link
+                                            href="/introduction-broker"
+                                            rel="noopener noreferrer"
+                                            className="text-[14px] leading-[16.8px] text-customBlackOne"
+                                        >
+                                            Introduction broker (IB)
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="/affilates"
+                                            rel="noopener noreferrer"
+                                            className="text-[14px] leading-[16.8px] text-customBlackOne"
+                                        >
+                                            Affilates
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div className="flex flex-1 flex-col gap-2">
-                            <div className="flex flex-row gap-4 h-[243px]">
-                                <div className="flex w-[111px] flex-col">
-                                    <p className="w-[111px] pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
+                            <div className="flex flex-row gap-4 h-[243px] max-sm:h-auto max-sm:flex-col">
+                                <div className="flex w-[111px] flex-col max-sm:w-[88px]">
+                                    <p className="w-[111px] max-sm:w-[88px] pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
                                         Markets & Tools
                                     </p>
                                     <div className="h-[1px] w-full bg-customBlueFour"></div>
@@ -231,8 +259,90 @@ const Footer = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="flex flex-row gap-4">
-                                <div className="flex w-[111px] flex-col">
+                            <div className="hidden flex-row gap-4 h-[243px] max-sm:h-auto max-sm:flex-col max-sm:flex">
+                                <div className="flex w-[111px] flex-col max-sm:w-[88px]">
+                                    <p className="w-[111px] max-sm:w-[88px] pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
+                                        Education
+                                    </p>
+                                    <div className="h-[1px] w-full bg-customBlueFour"></div>
+                                </div>
+                                <ul className="flex flex-col gap-2">
+                                    <li>
+                                        <Link
+                                            href="/basics-trading"
+                                            rel="noopener noreferrer"
+                                            className="text-[14px] leading-[16.8px] text-customBlackOne"
+                                        >
+                                            Basics of Trading
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="/technical-analysis"
+                                            rel="noopener noreferrer"
+                                            className="text-[14px] leading-[16.8px] text-customBlackOne"
+                                        >
+                                            Technical analysis
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="/articles"
+                                            rel="noopener noreferrer"
+                                            className="text-[14px] leading-[16.8px] text-customBlackOne"
+                                        >
+                                            Articles
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="/forex-glossary"
+                                            rel="noopener noreferrer"
+                                            className="text-[14px] leading-[16.8px] text-customBlackOne"
+                                        >
+                                            Forex Glossary
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="/market-news"
+                                            rel="noopener noreferrer"
+                                            className="text-[14px] leading-[16.8px] text-customBlackOne"
+                                        >
+                                            Market overview
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="/daily-forecast"
+                                            rel="noopener noreferrer"
+                                            className="text-[14px] leading-[16.8px] text-customBlackOne"
+                                        >
+                                            Daily Forecast
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="/webinar"
+                                            rel="noopener noreferrer"
+                                            className="text-[14px] leading-[16.8px] text-customBlackOne"
+                                        >
+                                            Webinar
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="/educational-videos"
+                                            rel="noopener noreferrer"
+                                            className="text-[14px] leading-[16.8px] text-customBlackOne"
+                                        >
+                                            Educational Videos
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="flex flex-row gap-4 max-sm:flex-col">
+                                <div className="flex w-[111px] flex-col max-sm:w-[88px] max-sm:hidden">
                                     <p className="pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
                                         Partnership
                                     </p>
@@ -260,10 +370,10 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="flex flex-1 flex-col justify-between">
-                            <div className="flex flex-row gap-4 h-[243px]">
-                                <div className="flex w-[111px] flex-col">
-                                    <p className="w-[111px] pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
+                        <div className="flex flex-1 flex-col justify-between max-sm:hidden">
+                            <div className="flex flex-row gap-4 h-[243px] max-sm:h-[326px] max-sm:flex-col">
+                                <div className="flex w-[111px] flex-col max-sm:w-[88px]">
+                                    <p className="w-[111px] max-sm:w-[88px] pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
                                         Education
                                     </p>
                                     <div className="h-[1px] w-full bg-customBlueFour"></div>
@@ -345,7 +455,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="flex flex-col gap-4">
-                            <div className="flex flex-col gap-4">
+                            <div className="flex flex-col gap-4 max-sm:hidden">
                                 <Link
                                     href="/"
                                     rel="noopener noreferrer"
@@ -381,7 +491,7 @@ const Footer = () => {
                                 <Link
                                     href="/"
                                     rel="noopener noreferrer"
-                                    className="flex flex-row items-center gap-4 py-3 px-2 border-[1px] border-solid border-customGreyFifteen rounded-lg"
+                                    className="flex flex-row items-center gap-4 py-3 px-2 border-[1px] border-solid border-customGreyFifteen rounded-lg max-sm:hidden"
                                 >
                                     <Image
                                         src="/android.svg"
@@ -396,7 +506,7 @@ const Footer = () => {
                 </span>
                                 </Link>
                             </div>
-                            <div className="">
+                            <div className="max-sm:hidden">
                                 <Image
                                     src="/qrcodetwo.png"
                                     alt="qrcodetwo"
@@ -408,9 +518,46 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mb-[101px] flex flex-row gap-9">
-                    <div className="flex w-[111px] flex-col">
-                        <p className="w-[111px] pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
+
+                <div className="hidden flex-row gap-2 max-sm:flex max-[340px]:flex-col max-[340px]:justify-between">
+                    <Link
+                        href="/"
+                        rel="noopener noreferrer"
+                        className="flex flex-row items-center gap-4 py-3 px-2 border-[1px] border-solid border-customGreyFifteen rounded-lg"
+                    >
+                        <Image
+                            src="/apple.svg"
+                            alt="apple"
+                            width={24}
+                            height={30}
+                            className="object-contain"
+                        />
+                        <div className="flex flex-col">
+                            <span className="text-[12px] leading-[14.4px] text-customBlackFour">Download on the</span>
+                        <span className="text-[16px] leading-[19.2px] text-customBlackFour font-semibold">Apple Store</span>
+                        </div>
+                    </Link>
+                    <Link
+                        href="/"
+                        rel="noopener noreferrer"
+                        className="flex flex-row items-center gap-4 py-3 px-2 border-[1px] border-solid border-customGreyFifteen rounded-lg "
+                    >
+                        <Image
+                            src="/google.svg"
+                            alt="google"
+                            width={24}
+                            height={30}
+                            className="object-contain"
+                        />
+                        <div className="flex flex-col">
+                            <span className="text-[12px] leading-[14.4px] text-customBlackFour">GET IT ON</span>
+                            <span className="text-[16px] leading-[19.2px] text-customBlackFour font-semibold">Google Play</span>
+                        </div>
+                    </Link>
+                </div>
+                <div className="mb-[101px] flex flex-row gap-9 max-sm:flex-col max-sm:gap-3 max-sm:my-10">
+                    <div className="flex w-[111px] flex-col max-sm:w-[88px]">
+                        <p className="w-[111px] max-sm:w-[88px] pb-4 text-[16px] font-bold leading-[19.2px] text-customBlueFour">
                             Legal{" "}
                         </p>
                         <div className="h-[1px] w-full bg-customBlueFour"></div>
@@ -443,14 +590,15 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="flex flex-row justify-between border-t-[1px] border-customBlueFour pt-11">
-                    <ul className="flex flex-row gap-11">
+                <div
+                    className="flex flex-row justify-between border-t-[1px] border-customBlueFour pt-11 max-sm:flex-col-reverse max-sm:pt-10 max-sm:gap-10">
+                    <ul className="flex flex-row gap-11 max-sm:gap-4 max-sm:justify-between">
                         <li>
                             <Link
                                 href="/"
                                 rel="noopener noreferrer"
                                 target="_blank"
-                                className="text-[14px] leading-[16.8px] text-customBlackOne"
+                                className="text-[16px] leading-[19.2px] text-customBlackOne"
                             >
                                 Risk Disclosure
                             </Link>
@@ -460,7 +608,7 @@ const Footer = () => {
                                 href="https://drive.google.com/file/d/1SaRFtM6Ju29GN-TPSsuWAKxKtUuepSwg/view"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-[14px] leading-[16.8px] text-customBlackOne"
+                                className="text-[16px] leading-[19.2px] text-customBlackOne"
                             >
                                 Privacy Policy
                             </Link>
@@ -470,23 +618,13 @@ const Footer = () => {
                                 href="/"
                                 rel="noopener noreferrer"
                                 target="_blank"
-                                className="text-[14px] leading-[16.8px] text-customBlackOne"
+                                className="text-[16px] leading-[19.2px] text-customBlackOne"
                             >
                                 AML Policy
                             </Link>
                         </li>
-                        <li>
-                            <Link
-                                href="/"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                className="text-[14px] leading-[16.8px] text-customBlackOne"
-                            >
-                                Sitemap
-                            </Link>
-                        </li>
                     </ul>
-                    <ul className="flex flex-row gap-2">
+                    <ul className="flex flex-row gap-2 max-sm:justify-between">
                         <li>
                             <Link href="/" target="_blank" rel="noopener noreferrer">
                                 <Image
@@ -498,14 +636,15 @@ const Footer = () => {
                                     alt="facebook"
                                     width={24}
                                     height={24}
-                                    className={`cursor-pointer rounded-lg ${hoveredIcon === "facebook" ? "box-shadow-icon" : ""} object-contain`}
+                                    className={`cursor-pointer rounded-lg ${hoveredIcon === "facebook" ? "box-shadow-icon" : ""} object-contain max-sm:w-8 max-sm:h-8`}
                                     onMouseEnter={() => setHoveredIcon("facebook")}
                                     onMouseLeave={() => setHoveredIcon(null)}
                                 />
                             </Link>
                         </li>
                         <li>
-                            <Link href="https://instagram.com/artsmrkts/?igsh=MXN2dndzaWRnNjQzNA%3D%3D" target="_blank" rel="noopener noreferrer">
+                            <Link href="https://instagram.com/artsmrkts/?igsh=MXN2dndzaWRnNjQzNA%3D%3D" target="_blank"
+                                  rel="noopener noreferrer">
                                 <Image
                                     src={
                                         hoveredIcon === "instagram"
@@ -515,20 +654,21 @@ const Footer = () => {
                                     alt="instagram"
                                     width={24}
                                     height={24}
-                                    className={`cursor-pointer rounded-lg ${hoveredIcon === "instagram" ? "box-shadow-icon" : ""} object-contain`}
+                                    className={`cursor-pointer rounded-lg ${hoveredIcon === "instagram" ? "box-shadow-icon" : ""} object-contain max-sm:w-8 max-sm:h-8`}
                                     onMouseEnter={() => setHoveredIcon("instagram")}
                                     onMouseLeave={() => setHoveredIcon(null)}
                                 />
                             </Link>
                         </li>
                         <li>
-                            <Link href="https://www.linkedin.com/company/artsmrkts" target="_blank" rel="noopener noreferrer">
+                            <Link href="https://www.linkedin.com/company/artsmrkts" target="_blank"
+                                  rel="noopener noreferrer">
                                 <Image
                                     src={hoveredIcon === "in" ? "/inHover.svg" : "/in.svg"}
                                     alt="in"
                                     width={24}
                                     height={24}
-                                    className={`cursor-pointer rounded-lg ${hoveredIcon === "in" ? "box-shadow-icon" : ""} object-contain`}
+                                    className={`cursor-pointer rounded-lg ${hoveredIcon === "in" ? "box-shadow-icon" : ""} object-contain max-sm:w-8 max-sm:h-8`}
                                     onMouseEnter={() => setHoveredIcon("in")}
                                     onMouseLeave={() => setHoveredIcon(null)}
                                 />
@@ -545,7 +685,7 @@ const Footer = () => {
                                     alt="telegram"
                                     width={24}
                                     height={24}
-                                    className={`cursor-pointer rounded-lg ${hoveredIcon === "telegram" ? "box-shadow-icon" : ""} object-contain`}
+                                    className={`cursor-pointer rounded-lg ${hoveredIcon === "telegram" ? "box-shadow-icon" : ""} object-contain max-sm:w-8 max-sm:h-8`}
                                     onMouseEnter={() => setHoveredIcon("telegram")}
                                     onMouseLeave={() => setHoveredIcon(null)}
                                 />
@@ -558,7 +698,7 @@ const Footer = () => {
                                     alt="unix"
                                     width={24}
                                     height={24}
-                                    className={`cursor-pointer rounded-lg ${hoveredIcon === "unix" ? "box-shadow-icon" : ""} object-contain`}
+                                    className={`cursor-pointer rounded-lg ${hoveredIcon === "unix" ? "box-shadow-icon" : ""} object-contain max-sm:w-8 max-sm:h-8`}
                                     onMouseEnter={() => setHoveredIcon("unix")}
                                     onMouseLeave={() => setHoveredIcon(null)}
                                 />

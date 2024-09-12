@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <main className="relative">
       <Banner />
-      <Ticker />
-      <Cards />
-      <MobileScroll />
-      <Trade />
-      <TradeTable />
-      <AccountTypesTwo />
-      <Tools />
-      <MarketTrends />
+      {/*<Ticker />*/}
+      {/*<Cards />*/}
+      {/*<MobileScroll />*/}
+      {/*<Trade />*/}
+      {/*<TradeTable />*/}
+      {/*<AccountTypesTwo />*/}
+      {/*<Tools />*/}
+      {/*<MarketTrends />*/}
     </main>
   );
 }

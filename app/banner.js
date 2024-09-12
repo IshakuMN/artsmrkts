@@ -42,34 +42,34 @@ const Banner = () => {
   }, []);
 
   return (
-    <section className="relative rounded-b-[80px] bg-customGreyFour">
-      <div className="bg-custom-gradient absolute z-10 h-full w-full rounded-b-[80px]"></div>
-      <div className="mx-auto flex max-w-[1240px] flex-row gap-[123px]">
-        <div className="relative z-20 mb-40 flex flex-1 flex-col pt-24">
-          <h1 className="text-[54px] font-semibold leading-[64.8px] text-customBlueThree">
+    <section className="relative rounded-b-[80px] bg-customGreyFour max-sm:rounded-none">
+      <div className="bg-custom-gradient absolute z-10 h-full w-full rounded-b-[80px]  max-sm:rounded-none "></div>
+      <div className="min-w-80 mx-auto flex max-w-[1240px] flex-row gap-[123px] max-sm:flex-col-reverse max-sm:gap-0 max-sm:rounded-0 max-sm:px-4">
+        <div className="relative z-20 mb-40 flex flex-1 flex-col pt-24 max-sm:pt-10 max-sm:mb-24">
+          <h1 className="text-[54px] font-semibold leading-[64.8px] text-customBlueThree max-sm:text-[32px] max-sm:leading-[38.4px] max-sm:font-medium">
             Discover your personal trading potential
           </h1>
-          <p className="mt-5 text-[18px] leading-[21.6px] text-customBlackOne">
+          <p className="mt-5 text-[18px] leading-[21.6px] text-customBlackOne max-sm:text-[16px] max-sm:leading-[19.2px] max-sm:mt-3">
             Trade with a globally trusted broker, and have an exclusive trading experience
           </p>
-          <div className="mt-11 flex flex-row gap-2">
-            <Link href="/try-free-demo">
+          <div className="mt-11 flex flex-row gap-2 max-sm:flex-col max-sm:w-full max-sm:gap-4 max-sm:mt-10">
+            <Link href="/try-free-demo" className="max-sm:w-full">
               <button
                 type="button"
-                className="flex cursor-pointer items-center justify-center rounded-[44px] bg-white px-[51.75px] py-3 border-[1px] border-customGrey border-solid transition-colors duration-300 ease-in-out hover:bg-customGreyTwo active:bg-customGrey"
+                className="max-sm:w-full  flex cursor-pointer items-center justify-center rounded-[44px] bg-white px-[51.75px] py-3 border-[1px] border-customGrey border-solid transition-colors duration-300 ease-in-out hover:bg-customGreyTwo active:bg-customGrey"
               >
-                <span className="text-[20px] font-semibold leading-[24px] text-customBlue">
+                <span className="text-[20px] font-semibold leading-[24px] text-customBlue max-sm:text-[14px] max-sm:leading-[16.8px]">
                   Try free demo
                 </span>
               </button>
             </Link>
-            <Link href="/sign-up">
+            <Link href="/sign-up" className='max-sm:w-full'>
               <button
                 type="button"
-                className="flex cursor-pointer items-center justify-center rounded-[44px] bg-customOrangeTwo px-[51.75px] py-3 transition-colors duration-300 ease-in-out hover:bg-customOrange active:bg-customOrangeThree"
+                className="max-sm:w-full flex cursor-pointer items-center justify-center rounded-[44px] bg-customOrangeTwo px-[51.75px] py-3 transition-colors duration-300 ease-in-out hover:bg-customOrange active:bg-customOrangeThree"
               >
-                <span className="text-[20px] font-semibold leading-[24px] text-white">
-                 Sign up now
+                <span className="text-[20px] font-semibold leading-[24px] text-white max-sm:text-[14px] max-sm:leading-[16.8px]">
+                 Sign up
                 </span>
               </button>
             </Link>
@@ -141,7 +141,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto flex max-w-[1240px] flex-row gap-5 px-4 pb-10 pt-[49px]">
+      <div className="min-w-80 mx-auto flex max-w-[1240px] flex-row gap-5 px-4 pb-10 pt-[49px] max-sm:rounded-0 max-sm:px-4">
         <div className="relative z-20 mr-[51px] flex flex-col gap-2">
           <Image
             src="trustpilot.svg"
