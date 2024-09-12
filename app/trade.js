@@ -9,7 +9,7 @@ const Trade = () => {
         <h3 className="text-[32px] font-medium leading-[38.1px] text-customBlackFive">
             Trade Forex, Indices, Stocks and more with Artsmarkets - the best Forex broker
         </h3>
-        <Link href="/login" className="relative z-20 mt-16 flex-1">
+        <Link href="/sign-up" className="relative z-20 mt-16 flex-1">
           <button
             type="button"
             className="flex cursor-pointer flex-row items-center justify-center rounded-[44px] border-[1px] border-customGrey bg-white px-11 py-3 transition-colors duration-300 ease-in-out hover:bg-customGreyTwo active:bg-customGrey"

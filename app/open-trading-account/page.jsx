@@ -8,7 +8,7 @@ import Questions from "../trading-hours/questions";
 import faqDataFive from "../utils/faqData5";
 import FormCall from "../formCall";
 import Help from "../help";
-import AccountTypes from "./accountTypes";
+import AccountTypesTwo from "../accountTypesTwo";
 import StatisticsSection from "../statisticsSection";
 
 const cardItems = [
@@ -95,7 +95,7 @@ export default function Page() {
                 </div>
             </section>
             <MobileAppSection/>
-            <AccountTypes/>
+            <AccountTypesTwo/>
             <Questions faqData={faqDataFive}/>
             <section
                 className="relative mx-auto mb-20 mt-16 flex max-w-[1240px] flex-row rounded-3xl bg-customGreyFour h-[456px]">
@@ -126,7 +126,7 @@ export default function Page() {
             <Help/>
             <section>
                 <div
-                    className="flex flex-row items-center justify-between rounded-[44px] bg-customBlueSeven py-9 px-14 max-w-screen-xl mx-auto">
+                    className="flex flex-row items-center justify-between rounded-[44px] bg-customBlueSeven py-9 px-14 max-w-screen-xl mx-auto mt-11">
                     <p className="text-[32px] font-medium leading-[38.4px] text-customBlackOne">Need Help? Visit our
                         Help Section</p>
                     <Link href="/categories-and-articles" target="_blank" rel="noopener noreferrer">

@@ -7,6 +7,7 @@ import TradeTable from "./tradeTable";
 import MobileScroll from "./mobileScroll";
 import Cards from "./cards";
 import Ticker from "./ticker";
+import AccountTypesTwo from "@/app/accountTypesTwo";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <MobileScroll />
       <Trade />
       <TradeTable />
-      <AccountTypes />
+      <AccountTypesTwo />
       <Tools />
       <MarketTrends />
     </main>

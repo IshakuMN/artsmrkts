@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaApple } from "react-icons/fa";
 import { BsGooglePlay } from "react-icons/bs";
 import { GrAndroid } from "react-icons/gr";
+import Link from "next/link";
 
 const Mobile = () => {
   const [isFirstVisible, setIsFirstVisible] = useState(true);
@@ -97,9 +98,11 @@ export const Mobile1 = () => {
           <p className="w-60 text-sm">
             MetaTrader4 mobile is very similar to MetaTrader5 for PC by its functionality. This mobile application supports most PC terminal&apos;s features (all trading functions, execution modes, as well as powerful technical analysis) except for the algorithmic trading functions.
           </p>
-          <button className="rounded-full bg-customBlueFon px-6 py-2 text-white">
-            view our platform
+
+          <Link href="/mt4-pc"><button className="rounded-full bg-customBlueFon px-6 py-2 text-white">
+            View our platform
           </button>
+          </Link>
         </div>
       </div>
       <div className="absolute bottom-4 right-10 flex gap-x-6">

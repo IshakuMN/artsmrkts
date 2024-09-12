@@ -141,7 +141,7 @@ export default function Page() {
                         <p className="text-[20px] leading-[24px] text-customBlackFour">Artsmrkts supports MetaTrader Web
                             for both demo and live accounts, allowing you to use it as your primary trading platform or
                             alongside desktop and mobile solutions.</p>
-                        <p className="text-[20px] leading-[24px] text-customBlackFour">To get started with WebTrader, you&apos;ll need to create an Artsmrkts account. Simply <Link href="/sign-in" target="_blank" rel="noopener noreferrer"
+                        <p className="text-[20px] leading-[24px] text-customBlackFour">To get started with WebTrader, you&apos;ll need to create an Artsmrkts account. Simply <Link href="/sign-up"  rel="noopener noreferrer"
                             className="text-customOrange underline">sign up</Link> to
                             set up your account and begin trading online.</p>
                     </div>

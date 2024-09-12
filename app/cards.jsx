@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Cards = () => {
   return (
@@ -8,9 +9,10 @@ const Cards = () => {
         <h1 className="my-8 text-[44px] font-medium">
             Trade on Forex. Profit on Forex
         </h1>
+          <Link href="/sign-up">
         <button className="h-fit rounded-full bg-customBlueFon px-6 py-2 font-semibold text-white hover:bg-[#182654] active:bg-[#001240]">
             Sign up
-        </button>
+        </button></Link>
       </div>
       <div className="my-2 flex justify-between">
         <AccessCard />

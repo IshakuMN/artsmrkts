@@ -91,7 +91,7 @@ const AccountTypes = () => {
                 </div>
               </div>
             </div>
-            <Link href="/register">
+            <Link href="/sign-up">
               <button
                 type="button"
                 className="flex w-full cursor-pointer items-center justify-center rounded-[44px] bg-customBlueFon py-3 transition-colors duration-300 ease-in-out hover:bg-customBlue active:bg-customBlueTwo"
@@ -181,7 +181,7 @@ const AccountTypes = () => {
                 </div>
               </div>
             </div>
-            <Link href="/register">
+            <Link href="/sign-up">
               <button
                 type="button"
                 className="flex w-full cursor-pointer items-center justify-center rounded-[44px] bg-customOrangeTwo py-3 transition-colors duration-300 ease-in-out hover:bg-customOrange active:bg-customOrangeThree"
@@ -256,7 +256,7 @@ const AccountTypes = () => {
                 </div>
               </div>
             </div>
-            <Link href="/register">
+            <Link href="/sign-up">
               <button
                 type="button"
                 className="flex w-full cursor-pointer items-center justify-center rounded-[44px] bg-customBlueFon py-3 transition-colors duration-300 ease-in-out hover:bg-customBlue active:bg-customBlueTwo"

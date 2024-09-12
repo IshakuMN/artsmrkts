@@ -53,17 +53,17 @@ const Banner = () => {
             Trade with a globally trusted broker, and have an exclusive trading experience
           </p>
           <div className="mt-11 flex flex-row gap-2">
-            <Link href="/">
+            <Link href="/try-free-demo">
               <button
                 type="button"
                 className="flex cursor-pointer items-center justify-center rounded-[44px] bg-white px-[51.75px] py-3 border-[1px] border-customGrey border-solid transition-colors duration-300 ease-in-out hover:bg-customGreyTwo active:bg-customGrey"
               >
                 <span className="text-[20px] font-semibold leading-[24px] text-customBlue">
-                  Try demo
+                  Try free demo
                 </span>
               </button>
             </Link>
-            <Link href="/register">
+            <Link href="/sign-up">
               <button
                 type="button"
                 className="flex cursor-pointer items-center justify-center rounded-[44px] bg-customOrangeTwo px-[51.75px] py-3 transition-colors duration-300 ease-in-out hover:bg-customOrange active:bg-customOrangeThree"
