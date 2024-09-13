@@ -12,7 +12,7 @@ const CardMarketTrends = ({
 }) => {
   return (
     <div
-      className={`relative cursor-pointer rounded-2xl ${isHoveredCard === id ? "box-shadow-three" : ""}`}
+      className={`relative cursor-pointer rounded-2xl w-[304px] ${isHoveredCard === id ? "box-shadow-three " : ""}`}
       onMouseEnter={() => onMouseEnter(id)}
       onMouseLeave={onMouseLeave}
     >
@@ -31,7 +31,7 @@ const CardMarketTrends = ({
         className="rounded-2xl"
       />
       <div
-        className={`bg-custom-gradient-three absolute bottom-0 left-0 flex w-full flex-col gap-2 rounded-2xl px-4 pt-4 ${isHoveredCard === id ? "pb-20" : "pb-8"} transition-all duration-300 ease-in-out`}
+        className={`bg-custom-gradient-three absolute bottom-0 w-[304px] left-0 flex flex-col gap-2 rounded-2xl px-4 pt-4 ${isHoveredCard === id ? "pb-20" : "pb-8"} transition-all duration-300 ease-in-out`}
       >
         <p className="text-[24px] font-medium leading-[28.8px] text-white">
           {title}

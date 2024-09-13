@@ -37,7 +37,7 @@ const Ticker = () => {
 
   return (
     <div
-      className="tradingview-widget-container scale-1-5 mt-4 !text-2xl"
+      className="min-w-80 tradingview-widget-container scale-1-5 mt-4 !text-2xl"
       ref={containerRef}
     >
       <div className="tradingview-widget-container__widget !text-2xl"></div>

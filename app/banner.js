@@ -42,9 +42,9 @@ const Banner = () => {
   }, []);
 
   return (
-    <section className="relative rounded-b-[80px] bg-customGreyFour max-sm:rounded-none">
+    <section className="min-w-80 relative rounded-b-[80px] bg-customGreyFour  overflow-hidden max-sm:rounded-none">
       <div className="bg-custom-gradient absolute z-10 h-full w-full rounded-b-[80px]  max-sm:rounded-none "></div>
-      <div className="min-w-80 mx-auto flex max-w-[1240px] flex-row gap-[123px] max-sm:flex-col-reverse max-sm:gap-0 max-sm:rounded-0 max-sm:px-4">
+      <div className="pt-11 mx-auto flex max-w-[1240px] flex-row gap-[123px] max-sm:flex-col-reverse max-sm:gap-0 max-sm:rounded-0 max-sm:px-4">
         <div className="relative z-20 mb-40 flex flex-1 flex-col pt-24 max-sm:pt-10 max-sm:mb-24">
           <h1 className="text-[54px] font-semibold leading-[64.8px] text-customBlueThree max-sm:text-[32px] max-sm:leading-[38.4px] max-sm:font-medium">
             Discover your personal trading potential
@@ -76,7 +76,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="f-full flex flex-1 flex-row justify-between">
+        <div className="f-full flex flex-1 flex-row justify-between max-sm:gap-3">
           <div className="animate-slide-up my-auto flex flex-col items-center gap-2">
             <span
               className={`text-[16px] leading-[19.2px] ${zen_kaku_gothic_new.className}`}
@@ -141,7 +141,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="min-w-80 mx-auto flex max-w-[1240px] flex-row gap-5 px-4 pb-10 pt-[49px] max-sm:rounded-0 max-sm:px-4">
+      <div className=" mx-auto flex max-w-[1240px] flex-row gap-5 px-4 pb-10 pt-[49px] max-sm:rounded-0 max-sm:px-4 max-sm:flex-col-reverse max-sm:pt-0">
         <div className="relative z-20 mr-[51px] flex flex-col gap-2">
           <Image
             src="trustpilot.svg"
